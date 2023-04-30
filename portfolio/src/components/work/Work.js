@@ -3,9 +3,9 @@ import React from "react";
 function Work() {
     return (
         <div className="section" id="work">
-            Work Experience
+            <h2>Work Experience</h2>
             <div>
-                
+                <h3>SkipTheDishes</h3>
             </div>
         </div>
     );

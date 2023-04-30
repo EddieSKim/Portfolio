@@ -1,21 +1,24 @@
 import './App.css';
-import NavBar from './components/NavBar';
-import Header from './components/Header';
-import Projects from './components/Projects';
-import About from './components/About';
-import Contacts from './components/Contacts';
-import Work from './components/Work';
+import NavBar from './components/navBar/NavBar';
+import Header from './components/header/Header';
+import Projects from './components/projects/Projects';
+import About from './components/about/About';
+import Contacts from './components/contacts/Contacts';
+import Work from './components/work/Work';
+import Banner from './components/banner/Banner';
 
 function App() {
   return (
-    <>
-      <Header />
-      <NavBar />
+    <div className="container">
+      <div className="header-ctn">
+        <NavBar />
+      </div>
+      <Banner />
       <About />
       <Projects />
-      <Work/>
+      <Work />
       <Contacts />
-    </>
+    </div>
   );
 }
 
