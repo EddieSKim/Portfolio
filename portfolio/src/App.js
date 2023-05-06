@@ -1,6 +1,5 @@
 import './App.css';
 import NavBar from './components/navBar/NavBar';
-import Header from './components/header/Header';
 import Projects from './components/projects/Projects';
 import About from './components/about/About';
 import Contacts from './components/contacts/Contacts';
@@ -13,11 +12,13 @@ function App() {
       <div className="header-ctn">
         <NavBar />
       </div>
-      <Banner />
-      <About />
-      <Projects />
-      <Work />
-      <Contacts />
+      <div className="wrapper">
+        <Banner />
+        <About />
+        <Projects />
+        <Work />
+        <Contacts />
+      </div>
     </div>
   );
 }

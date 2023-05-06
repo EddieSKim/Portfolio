@@ -40,5 +40,10 @@
 .container {
   background-color: #6e78a3;
   height: 100%;
+  display: grid;
 }
 
+.wrapper {
+  margin-right: auto;
+  margin-left: auto;
+}

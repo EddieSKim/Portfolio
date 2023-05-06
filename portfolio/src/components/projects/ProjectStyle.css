@@ -1,0 +1,19 @@
+.project-ctn {
+    display: grid;
+    grid-template-columns: 150px 600px;
+    height: 20vh;
+}
+
+.proj-img {
+    width: 30vw;
+    height: auto;
+}
+
+.tab-btn {
+    width: 20vw;
+}
+
+.project-info {
+    display: relative;
+    padding-left: 2vw;
+}
