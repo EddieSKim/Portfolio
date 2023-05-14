@@ -5,21 +5,27 @@ import About from './components/about/About';
 import Contacts from './components/contacts/Contacts';
 import Work from './components/work/Work';
 import Banner from './components/banner/Banner';
+import Footer from './components/footer/Footer';
+import Socials from './components/Socials';
 
 function App() {
   return (
-    <div className="container">
-      <div className="header-ctn">
-        <NavBar />
-      </div>
-      <div className="wrapper">
+    <>
+      <Socials />
+      <div className="container">
+        <div className="header-ctn">
+          <NavBar />
+        </div>
         <Banner />
-        <About />
-        <Projects />
-        <Work />
-        <Contacts />
+        <div className='wrapper'>
+          <About />
+          <Work />
+          <Projects />
+          <Contacts />
+        </div>
+        <Footer />
       </div>
-    </div>
+    </>
   );
 }
 
