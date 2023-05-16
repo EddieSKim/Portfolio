@@ -7,10 +7,10 @@ import LaptopIcon from '@mui/icons-material/Laptop';
 import './NavBarStyle.css';
 import { Button, useMediaQuery, AppBar, Toolbar, Drawer } from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
-import HomeIcon from '@mui/icons-material/Home';
 import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import logoIcon from "../../images/logo.png"
 
 function NavBar() {
     const smallMediaScreen = useMediaQuery("(max-width: 500px)");
@@ -37,7 +37,8 @@ function NavBar() {
                                     duration={300}
                                     onClick={closeMenu}
                                 >
-                                    <HomeIcon />
+                                    <img src={logoIcon} alt="logo" style={{ width: "50px" }}/>
+                                    {/* <HomeIcon /> */}
                                 </Link>
                             </Button>
                             <Button sx={{ color: "white" }}>
@@ -96,7 +97,7 @@ function NavBar() {
                                     duration={300}
                                     onClick={closeMenu}
                                 >
-                                    <HomeIcon />
+                                    <img src={logoIcon} alt="logo" style={{ width: "40px" }}/>
                                 </Link>
                             </Button>
                             <Button sx={{ color: "white" }}

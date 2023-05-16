@@ -49,7 +49,7 @@ function Projects() {
                                     src={motivHome}
                                     placeholderSrc={motivHomeLowres}
                                     alt="motiv-home"
-                                    effect="blue" />
+                                    effect="blur" />
                                 {/* <img loading="lazy" className="proj-img" src={motivHome} alt="screenshots" /> */}
                             </div>
                             <h3>Motiv-Optimize | University of Calgary</h3>
@@ -89,8 +89,8 @@ function Projects() {
                                     className="proj-img"
                                     src={portfolioBanner}
                                     placeholderSrc={portfolioBannerLowres}
-                                    alt="motiv-home"
-                                    effect="blue" />
+                                    alt="portfolioBanner"
+                                    effect="blur" />
                                 {/* <img loading="lazy" className="proj-img" src={portfolioBanner} alt="screenshots" /> */}
                             </div>
                             <h3>Portfolio V2</h3>
@@ -134,8 +134,8 @@ function Projects() {
                                     className="proj-img"
                                     src={portfoliov1}
                                     placeholderSrc={portfoliov1Lowres}
-                                    alt="motiv-home"
-                                    effect="blue" />
+                                    alt="portfoliov1"
+                                    effect="blur" />
                                 {/* <img loading="lazy" className="proj-img" src={portfoliov1} alt="screenshots" /> */}
                             </div>
                             <h3>Portfolio V1</h3>
