@@ -11,6 +11,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import logoIcon from "../../images/logo.png"
+import fileRef from "../../documents/Resume_EddieKim.pdf";
 
 function NavBar() {
     const smallMediaScreen = useMediaQuery("(max-width: 500px)");
@@ -22,6 +23,12 @@ function NavBar() {
 
     const closeMenu = () => {
         setNavIsOpen(false);
+    }
+
+    const downloadFile = () => {
+        const aTag = document.createElement("a");
+        aTag.href = fileRef;
+        aTag.setAttribute("download", "Resume_EddieKim.pdf");
     }
 
     return (
@@ -37,7 +44,7 @@ function NavBar() {
                                     duration={300}
                                     onClick={closeMenu}
                                 >
-                                    <img src={logoIcon} alt="logo" style={{ width: "50px" }}/>
+                                    <img src={logoIcon} alt="logo" style={{ width: "50px" }} />
                                     {/* <HomeIcon /> */}
                                 </Link>
                             </Button>
@@ -82,10 +89,11 @@ function NavBar() {
                                 </Link>
                             </Button>
                             <Button
-                                sx={{ color: "white" }}
-                                href="./"
-                                download={""}>
-                                Resume
+                                onClick={downloadFile}
+                                sx={{ color: "white" }}>
+                                <a href={fileRef} target="_blank" style={{ textDecoration: "none", color: "white" }}>
+                                    Resume
+                                </a>
                             </Button>
                         </Toolbar>
                     ) : (
@@ -97,7 +105,7 @@ function NavBar() {
                                     duration={300}
                                     onClick={closeMenu}
                                 >
-                                    <img src={logoIcon} alt="logo" style={{ width: "40px" }}/>
+                                    <img src={logoIcon} alt="logo" style={{ width: "40px" }} />
                                 </Link>
                             </Button>
                             <Button sx={{ color: "white" }}
@@ -154,10 +162,11 @@ function NavBar() {
                     </Link>
                 </Button>
                 <Button
-                    sx={{ color: "black", width: "100%" }}
-                    href="./"
-                    download={""}>
-                    Resume
+                    onClick={downloadFile}
+                    sx={{ color: "white" }}>
+                    <a href={fileRef} target="_blank" style={{ textDecoration: "none", color: "black" }}>
+                        Resume
+                    </a>
                 </Button>
                 <Button
                     sx={{ color: "black", marginTop: "auto" }}
