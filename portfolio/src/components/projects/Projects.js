@@ -1,10 +1,21 @@
 import React, { useState } from "react";
-import { Tabs, Tab, Chip, useMediaQuery, IconButton, Tooltip } from "@mui/material";
+import {
+    Tabs,
+    Tab,
+    Chip,
+    useMediaQuery,
+    IconButton,
+    Tooltip
+} from "@mui/material";
 import motivHome from "../../images/projectImages/motivOptimize/motiv-home.png";
+import motivHomeLowres from "../../images/projectImages/motivOptimize/motiv-home-lowres.jpg";
 import portfolioBanner from "../../images/projectImages/portfolio/banner.png";
+import portfolioBannerLowres from "../../images/projectImages/portfolio/banner-lowres.jpg";
 import portfoliov1 from "../../images/projectImages/portfoliov1/portfoliov1.png";
+import portfoliov1Lowres from "../../images/projectImages/portfoliov1/portfoliov1-lowres.jpg";
 import "./ProjectStyle.css";
 import FolderIcon from '@mui/icons-material/Folder';
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 
 function Projects() {
@@ -33,7 +44,13 @@ function Projects() {
                     <>
                         <div className="project-info" id="motiv">
                             <div className="card">
-                                <img loading="lazy" className="proj-img" src={motivHome} alt="screenshots" />
+                                <LazyLoadImage
+                                    className="proj-img"
+                                    src={motivHome}
+                                    placeholderSrc={motivHomeLowres}
+                                    alt="motiv-home"
+                                    effect="blue" />
+                                {/* <img loading="lazy" className="proj-img" src={motivHome} alt="screenshots" /> */}
                             </div>
                             <h3>Motiv-Optimize | University of Calgary</h3>
                             <span>Sept 2022 - Apr 2023</span>
@@ -68,7 +85,13 @@ function Projects() {
                     <>
                         <div className="project-info" id="portfolio">
                             <div className="card">
-                                <img loading="lazy" className="proj-img" src={portfolioBanner} alt="screenshots" />
+                                <LazyLoadImage
+                                    className="proj-img"
+                                    src={portfolioBanner}
+                                    placeholderSrc={portfolioBannerLowres}
+                                    alt="motiv-home"
+                                    effect="blue" />
+                                {/* <img loading="lazy" className="proj-img" src={portfolioBanner} alt="screenshots" /> */}
                             </div>
                             <h3>Portfolio V2</h3>
                             <span>May 2023 |
@@ -107,7 +130,13 @@ function Projects() {
                     <>
                         <div className="project-info" id="portfolio">
                             <div className="card">
-                                <img loading="lazy" className="proj-img" src={portfoliov1} alt="screenshots" />
+                                <LazyLoadImage
+                                    className="proj-img"
+                                    src={portfoliov1}
+                                    placeholderSrc={portfoliov1Lowres}
+                                    alt="motiv-home"
+                                    effect="blue" />
+                                {/* <img loading="lazy" className="proj-img" src={portfoliov1} alt="screenshots" /> */}
                             </div>
                             <h3>Portfolio V1</h3>
                             <span>July 2021 |
