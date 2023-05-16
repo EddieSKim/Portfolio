@@ -6,7 +6,7 @@ import Contacts from './components/contacts/Contacts';
 import Work from './components/work/Work';
 import Banner from './components/banner/Banner';
 import Footer from './components/footer/Footer';
-import Socials from './components/Socials';
+import Socials from './components/socials/Socials';
 
 function App() {
   return (

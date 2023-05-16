@@ -6,7 +6,7 @@ import { TypeAnimation } from "react-type-animation";
 function Banner() {
     return (
         <div className="banner-section" id="banner">
-            <img className="image" src={computer} />
+            <img className="banner-image" src={computer} alt="computer-img"/>
             <h3 className="banner-title">
                 <span>&lt;</span>
                 <TypeAnimation

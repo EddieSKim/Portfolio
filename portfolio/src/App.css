@@ -1,9 +1,6 @@
-.container {
-  /* background-color: #080038; */
-}
-
 .wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }

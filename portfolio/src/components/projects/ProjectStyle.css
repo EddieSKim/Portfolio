@@ -1,28 +1,25 @@
 .project-section {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .project-title {
-    position: relative;
-    max-width: 420px;
-}
-
-.project-title::after {
-    content:" ";
-    height: 2px;
-    width: 300px;
-    background: black;
-    display: block;
-    position: absolute;
-    top: 50%;
-    right: 0;
+    font-size: 1.4vmax;
 }
 
 .project-wrapper {
     display: grid;
     grid-template-columns: 150px 600px;
     min-height: 400px;
+}
+
+.card {
+    border: solid grey;
+    border-radius: 2px;
 }
 
 .proj-img {
@@ -39,4 +36,34 @@
     display: relative;
     padding-left: 2vw;
     padding-right: 2vw;
+}
+
+.tech-chip {
+    margin: 2px;
+}
+
+@media screen and (max-width: 500px) {
+    .project-wrapper {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-height: 920px) {
+    .project-section {
+        height: 110vh;
+    }
+}
+
+@media screen and (max-height: 700px) {
+    .project-section {
+      height: 120vh;
+    }
+}
+
+@media screen and (max-height: 500px) {
+    .project-section {
+        height: 140vh;
+    }
 }

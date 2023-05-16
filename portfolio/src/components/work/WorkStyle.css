@@ -1,15 +1,19 @@
 .work-section {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
 }
 
 .work-title {
     position: relative;
-    max-width: 420px;
 }
 
-.work-title::after {
-    content:" ";
+/* .work-title::after {
+    content: " ";
     height: 2px;
     width: 200px;
     background: black;
@@ -17,7 +21,7 @@
     position: absolute;
     top: 50%;
     right: 0;
-}
+} */
 
 .work-wrapper {
     display: grid;
@@ -27,8 +31,28 @@
 
 .experience-ctn {
     padding-left: 2vw;
+    padding-right: 2vw;
 }
 
-.tech-ctn {
+/* .tech-ctn {
     display: flex;
+} */
+
+.tech-chip {
+    margin: 2px;
+}
+
+@media screen and (max-height: 920px) {
+    .work-section {
+        height: 100vh;
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .work-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
 }

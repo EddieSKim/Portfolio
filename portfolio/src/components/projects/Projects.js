@@ -1,39 +1,15 @@
 import React, { useState } from "react";
-import { Tabs, Tab, Chip, Grid } from "@mui/material";
-import motivHome from "../../images/projectImages/motivOptimize/motiv-home.png"
-import motivScreen from "../../images/projectImages/motivOptimize/motiv-screen.png"
-import motivNewCampaign from "../../images/projectImages/motivOptimize/motiv-newCampaign.png"
-import motivDashboard from "../../images/projectImages/motivOptimize/motiv-dashboard.png"
-import "./ProjectStyle.css"
-import Carousel from 'react-material-ui-carousel'
+import { Tabs, Tab, Chip, useMediaQuery, IconButton, Tooltip } from "@mui/material";
+import motivHome from "../../images/projectImages/motivOptimize/motiv-home.png";
+import portfolioBanner from "../../images/projectImages/portfolio/banner.png";
+import portfoliov1 from "../../images/projectImages/portfoliov1/portfoliov1.png";
+import "./ProjectStyle.css";
+import FolderIcon from '@mui/icons-material/Folder';
 
-const motivList = [
-    {
-        label: "motiv-home",
-        imgPath: motivHome,
-    },
-    {
-        label: "motiv-screen",
-        imgPath: motivScreen,
-    },
-    {
-        label: "motiv-new",
-        imgPath: motivNewCampaign,
-    },
-    {
-        label: "motiv-dashboard",
-        imgPath: motivDashboard,
-    },
-]
-
-const portfolioList = [
-    {
-        label: "portfolio-home",
-    }
-]
 
 function Projects() {
     const [tabValue, setTabValue] = useState(0);
+    const smallMediaScreen = useMediaQuery("(max-width: 500px");
 
     const handleTabChange = (event, value) => {
         setTabValue(value)
@@ -45,103 +21,124 @@ function Projects() {
             <div className="project-wrapper">
                 <Tabs
                     variant="fullWidth"
-                    orientation="vertical"
+                    orientation={smallMediaScreen ? "horizontal" : "vertical"}
                     value={tabValue}
                     onChange={handleTabChange}>
                     <Tab label="Motiv-Optimize" />
-                    <Tab label="Portfolio" />
+                    <Tab label="Portfolio V2" />
+                    <Tab label="Portfolio V1" />
                 </Tabs>
-                {tabValue === 0 && <>
-                    <div className="project-info" id="motiv">
-                        <Carousel >
-                            {
-                                motivList.map((image) => (
-                                    <img className="proj-img" src={image.imgPath} alt="screenshots" />
-                                ))
-                            }
-                        </Carousel>
-                        <h3>Motiv-Optimize | University of Calgary</h3>
-                        <span>Sept 2022 - Apr 2023</span>
-                        <div>
-                            <ul>
-                                <li>
-                                    Collaborated with a team and industry sponsor, <span>Motiv Digital</span>, to develop an application that helps marketing teams create efficient campaigns and websites by leveraging the power of Multi Armed Bandit algorithm
-                                </li>
-                                <li>
-                                    Won 2nd place at the Schulich School of Engineering design fair in the software category
-                                </li>
-                            </ul>
+                {
+                    tabValue === 0 &&
+                    <>
+                        <div className="project-info" id="motiv">
+                            <div className="card">
+                                <img loading="lazy" className="proj-img" src={motivHome} alt="screenshots" />
+                            </div>
+                            <h3>Motiv-Optimize | University of Calgary</h3>
+                            <span>Sept 2022 - Apr 2023</span>
                             <div>
-                                <h4>Technologies Used</h4>
-                                <Grid container spacing={1}>
-                                    <Grid item xs={3}>
+                                <ul>
+                                    <li>
+                                        Collaborated with a team and industry sponsor, <span>Motiv Digital</span>, to develop an application that helps marketing teams create efficient campaigns and websites by leveraging the power of Multi Armed Bandit algorithm
+                                    </li>
+                                    <li>
+                                        Placed <b>2nd</b> at the Schulich School of Engineering design fair in the software category
+                                    </li>
+                                </ul>
+                                <div>
+                                    <h4>Technologies Used</h4>
+                                    <div>
                                         <Chip className="tech-chip" label="Typescript" />
-                                    </Grid>
-                                    <Grid item xs={3}>
                                         <Chip className="tech-chip" label="Javascript" />
-                                    </Grid>
-                                    <Grid item xs={3}>
                                         <Chip className="tech-chip" label="Material-UI" />
-                                    </Grid>
-                                    <Grid item xs={3}>
                                         <Chip className="tech-chip" label="NextJs" />
-                                    </Grid>
-                                    <Grid item xs={3}>
                                         <Chip className="tech-chip" label="Chart.js" />
-                                    </Grid>
-                                    <Grid item xs={3}>
                                         <Chip className="tech-chip" label="Vercel" />
-                                    </Grid>
-                                    <Grid item xs={3}>
                                         <Chip className="tech-chip" label="HTML" />
-                                    </Grid>
-                                    <Grid item xs={3}>
                                         <Chip className="tech-chip" label="CSS" />
-                                    </Grid>
-                                </Grid>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </>}
-                {tabValue === 1 && <>
-                    <div className="project-info" id="portfolio">
-                        <Carousel>
-
-                        </Carousel>
-                        <h3>Portfolio</h3>
-                        <span>May 2023 - Current</span>
-                        <div>
-                            <ul>
-                                <li>
-                                    The objective of this project was to create a place to organize and showcase my work experiences and projects.
-                                </li>
-                                <li>
-                                    Currently(2023) there isn't much content, but hopefully it continues to grow as develop more projects and gain more experience.
-                                </li>
-                            </ul>
+                    </>
+                }
+                {
+                    tabValue === 1 &&
+                    <>
+                        <div className="project-info" id="portfolio">
+                            <div className="card">
+                                <img loading="lazy" className="proj-img" src={portfolioBanner} alt="screenshots" />
+                            </div>
+                            <h3>Portfolio V2</h3>
+                            <span>May 2023 |
+                                <Tooltip title="Src Code" placement="right">
+                                    <IconButton
+                                        href="https://github.com/EddieSKim/Portfolio"
+                                        target="./"
+                                        children={<FolderIcon />} />
+                                </Tooltip>
+                            </span>
                             <div>
-                                <h4>Technologies Used</h4>
-                                <Grid container>
-                                    <Grid item xs={3}>
+                                <ul>
+                                    <li>
+                                        The objective of this project was to create a place to organize and showcase my work experiences and projects.
+                                    </li>
+                                    <li>
+                                        Currently(2023) there isn't much content, but hopefully it continues to grow as develop more projects and gain more experience.
+                                    </li>
+                                </ul>
+                                <div>
+                                    <h4>Technologies Used</h4>
+                                    <div>
                                         <Chip className="tech-chip" label="Javascript" />
-                                    </Grid>
-                                    <Grid item xs={3}>
                                         <Chip className="tech-chip" label="HTML" />
-                                    </Grid>
-                                    <Grid item xs={3}>
                                         <Chip className="tech-chip" label="CSS" />
-                                    </Grid>
-                                    <Grid item xs={3}>
                                         <Chip className="tech-chip" label="React" />
-                                    </Grid>
-                                    <Grid item xs={3}>
                                         <Chip className="tech-chip" label="Material-UI" />
-                                    </Grid>
-                                </Grid>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </>}
+                    </>
+                }
+                {
+                    tabValue === 2 &&
+                    <>
+                        <div className="project-info" id="portfolio">
+                            <div className="card">
+                                <img loading="lazy" className="proj-img" src={portfoliov1} alt="screenshots" />
+                            </div>
+                            <h3>Portfolio V1</h3>
+                            <span>July 2021 |
+                                <Tooltip title="Src Code" placement="right">
+                                    <IconButton
+                                        href="https://github.com/EddieSKim/EddieSKim.github.io"
+                                        target="./"
+                                        children={<FolderIcon />} />
+                                </Tooltip>
+                            </span>
+                            <div>
+                                <ul>
+                                    <li>
+                                        Created a simple web application to learn the basics of HTML and CSS.
+                                    </li>
+                                    <li>
+                                        It includes a home page, academic projects page, personal projects page and a list on contacts.
+                                    </li>
+                                </ul>
+                                <div>
+                                    <h4>Technologies Used</h4>
+                                    <div>
+                                        <Chip className="tech-chip" label="JQuery" />
+                                        <Chip className="tech-chip" label="HTML" />
+                                        <Chip className="tech-chip" label="CSS" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </>
+                }
             </div>
         </div>
     );

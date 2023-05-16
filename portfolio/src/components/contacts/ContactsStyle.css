@@ -1,5 +1,31 @@
 .contact-section {
-
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
 }
 
+.contacts-wrapper {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.contact-h3 {
+    font-size: 1.4vmax;
+}
+
+@media screen and (max-width: 500px) {
+    .contact-section {
+        height: 60vh;
+    }
+
+    .contacts-wrapper {
+        max-width: 80%;
+    }
+}

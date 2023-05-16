@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { Tabs, Tab, Chip } from "@mui/material";
+import { Tabs, Tab, Chip, useMediaQuery } from "@mui/material";
 import "./WorkStyle.css";
 
 function Work() {
     const [tabValue, setTabValue] = useState(0);
+    const smallMediaScreen = useMediaQuery("(max-width: 500px");
 
     const handleTabChange = (event, value) => {
         setTabValue(value);
@@ -13,7 +14,10 @@ function Work() {
         <div className="work-section" id="work">
             <h2 className="work-title"><span>Work Experience</span></h2>
             <div className="work-wrapper">
-                <Tabs orientation="vertical" value={tabValue} onChange={handleTabChange}>
+                <Tabs
+                    orientation={smallMediaScreen ? "horizontal" : "vertical"}
+                    value={tabValue}
+                    onChange={handleTabChange}>
                     <Tab label="SkipTheDishes" />
                 </Tabs>
                 {tabValue === 0 && <>
@@ -33,12 +37,12 @@ function Work() {
                                 </li>
                             </ul>
                             <div className="tech-ctn">
-                                <Chip label="Javascript" />
-                                <Chip label="Typescript" />
-                                <Chip label="Java" />
-                                <Chip label="HTML" />
-                                <Chip label="CSS" />
-                                <Chip label="React" />
+                                <Chip className="tech-chip" label="Javascript" />
+                                <Chip className="tech-chip" label="Typescript" />
+                                <Chip className="tech-chip" label="Java" />
+                                <Chip className="tech-chip" label="HTML" />
+                                <Chip className="tech-chip" label="CSS" />
+                                <Chip className="tech-chip" label="React" />
                             </div>
                         </div>
                     </div>

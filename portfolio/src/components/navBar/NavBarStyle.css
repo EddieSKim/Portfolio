@@ -10,6 +10,11 @@
     z-index: 15;
     box-shadow: 0px 1px 2px grey;
     padding-top: 0.5vh;
+    z-index: 5;
+}
+
+.nav-wrapper {
+    position: fixed;
 }
 
 .nav-icon {
@@ -18,4 +23,16 @@
 
 .logo {
     color: white;
+}
+
+.ham-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+}
+
+.nav-toolbar {
+    display: flex;
+    justify-content: flex-end;
 }

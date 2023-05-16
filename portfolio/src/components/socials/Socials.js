@@ -1,44 +1,45 @@
 import React from "react";
 import "./SocialsStyle.css";
-import { IconButton, Tooltip } from "@mui/material";
+import { Tooltip, Button, useMediaQuery } from "@mui/material";
 import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
 function Socials() {
+    const smallMediaScreen = useMediaQuery("(max-width: 768px)");
 
     return (
         <div className="socials-bar">
             <div className="icon-wrapper">
-                <Tooltip title="Send me a mail" placement="right">
-                    <IconButton
-                        href={`mailto:edkm1212@gmail.com`}
+                <Tooltip title="Send me an email" placement="right">
+                    <Button
+                        sx={{ color: smallMediaScreen ? "white" : "black" }}
                         className="socials-btn"
-                        children={
-                            <EmailIcon fontSize="large" />
-                        } />
+                        href={`mailto:edkm1212@gmail.com`}>
+                        <EmailIcon fontSize="large" />
+                    </Button>
                 </Tooltip>
             </div>
             <div className="icon-wrapper">
                 <Tooltip title="To LinkedIn" placement="right">
-                    <IconButton
+                    <Button
+                        sx={{ color: smallMediaScreen ? "white" : "black" }}
                         href="https://www.linkedin.com/in/eddie-kim-0388231b5/"
                         target="_blank"
-                        className="socials-btn"
-                        children={
-                            <LinkedInIcon fontSize="large" />
-                        } />
+                        className="socials-btn">
+                        <LinkedInIcon fontSize="large" />
+                    </Button>
                 </Tooltip>
             </div>
             <div className="icon-wrapper">
                 <Tooltip title="To GitHub" placement="right">
-                    <IconButton
+                    <Button
+                        sx={{ color: smallMediaScreen ? "white" : "black" }}
                         href="https://github.com/EddieSKim"
                         target="_blank"
-                        className="socials-btn"
-                        children={
-                            <GitHubIcon fontSize="large" />
-                        } />
+                        className="socials-btn">
+                        <GitHubIcon fontSize="large" />
+                    </Button>
                 </Tooltip>
             </div>
         </div>
