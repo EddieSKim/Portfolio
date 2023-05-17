@@ -45,7 +45,6 @@ function NavBar() {
                                     onClick={closeMenu}
                                 >
                                     <img src={logoIcon} alt="logo" style={{ width: "50px" }} />
-                                    {/* <HomeIcon /> */}
                                 </Link>
                             </Button>
                             <Button sx={{ color: "white" }}>
@@ -91,7 +90,10 @@ function NavBar() {
                             <Button
                                 onClick={downloadFile}
                                 sx={{ color: "white" }}>
-                                <a href={fileRef} target="_blank" style={{ textDecoration: "none", color: "white" }}>
+                                <a href={fileRef}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    style={{ textDecoration: "none", color: "white" }}>
                                     Resume
                                 </a>
                             </Button>
@@ -164,7 +166,7 @@ function NavBar() {
                 <Button
                     onClick={downloadFile}
                     sx={{ color: "white" }}>
-                    <a href={fileRef} target="_blank" style={{ textDecoration: "none", color: "black" }}>
+                    <a href={fileRef} target="_blank" rel="noreferrer" style={{ textDecoration: "none", color: "black" }}>
                         Resume
                     </a>
                 </Button>
@@ -175,11 +177,13 @@ function NavBar() {
                 </Button>
                 <Button
                     sx={{ color: "black" }}
+                    rel="noreferrer"
                     href="https://www.linkedin.com/in/eddie-kim-0388231b5/"
                     target="_blank">
                     <LinkedInIcon fontSize="small" />
                 </Button>
                 <Button
+                    rel="noreferrer"
                     sx={{ color: "black", marginBottom: "4px" }}
                     href="https://github.com/EddieSKim"
                     target="_blank">

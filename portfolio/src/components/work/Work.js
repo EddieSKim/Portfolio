@@ -2,6 +2,15 @@ import React, { useState } from "react";
 import { Tabs, Tab, Chip, useMediaQuery } from "@mui/material";
 import "./WorkStyle.css";
 
+const skipTech = [
+    "Javascript",
+    "Typescript",
+    "Java",
+    "HTML",
+    "CSS",
+    "React",
+]
+
 function Work() {
     const [tabValue, setTabValue] = useState(0);
     const smallMediaScreen = useMediaQuery("(max-width: 500px");
@@ -37,12 +46,13 @@ function Work() {
                                 </li>
                             </ul>
                             <div className="tech-ctn">
-                                <Chip className="tech-chip" label="Javascript" />
-                                <Chip className="tech-chip" label="Typescript" />
-                                <Chip className="tech-chip" label="Java" />
-                                <Chip className="tech-chip" label="HTML" />
-                                <Chip className="tech-chip" label="CSS" />
-                                <Chip className="tech-chip" label="React" />
+                                {
+                                    skipTech.map((tech, index) => {
+                                        return (
+                                            <Chip className="tech-chip" label={tech} key={index} />
+                                        );
+                                    })
+                                }
                             </div>
                         </div>
                     </div>

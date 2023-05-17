@@ -25,6 +25,7 @@ function Socials() {
                     <Button
                         sx={{ color: smallMediaScreen ? "white" : "black" }}
                         href="https://www.linkedin.com/in/eddie-kim-0388231b5/"
+                        rel="noreferrer"
                         target="_blank"
                         className="socials-btn">
                         <LinkedInIcon fontSize="large" />
@@ -36,6 +37,7 @@ function Socials() {
                     <Button
                         sx={{ color: smallMediaScreen ? "white" : "black" }}
                         href="https://github.com/EddieSKim"
+                        rel="noreferrer"
                         target="_blank"
                         className="socials-btn">
                         <GitHubIcon fontSize="large" />

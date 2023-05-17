@@ -17,6 +17,30 @@ import "./ProjectStyle.css";
 import FolderIcon from '@mui/icons-material/Folder';
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
+const motivTech = [
+    "Typescript",
+    "Javascript",
+    "Material-UI",
+    "NextJs",
+    "Chart.js",
+    "Vercel",
+    "HTML",
+    "CSS",
+]
+
+const portfolioV2Tech = [
+    "Javascript",
+    "HTML",
+    "CSS",
+    "React",
+    "Material-UI",
+]
+
+const portfolioV1Tech = [
+    "JQuery",
+    "HTML",
+    "CSS",
+]
 
 function Projects() {
     const [tabValue, setTabValue] = useState(0);
@@ -50,7 +74,6 @@ function Projects() {
                                     placeholderSrc={motivHomeLowres}
                                     alt="motiv-home"
                                     effect="blur" />
-                                {/* <img loading="lazy" className="proj-img" src={motivHome} alt="screenshots" /> */}
                             </div>
                             <h3>Motiv-Optimize | University of Calgary</h3>
                             <span>Sept 2022 - Apr 2023</span>
@@ -66,14 +89,13 @@ function Projects() {
                                 <div>
                                     <h4>Technologies Used</h4>
                                     <div>
-                                        <Chip className="tech-chip" label="Typescript" />
-                                        <Chip className="tech-chip" label="Javascript" />
-                                        <Chip className="tech-chip" label="Material-UI" />
-                                        <Chip className="tech-chip" label="NextJs" />
-                                        <Chip className="tech-chip" label="Chart.js" />
-                                        <Chip className="tech-chip" label="Vercel" />
-                                        <Chip className="tech-chip" label="HTML" />
-                                        <Chip className="tech-chip" label="CSS" />
+                                        {
+                                            motivTech.map((tech, index) => {
+                                                return (
+                                                    <Chip className="tech-chip" label={tech} key={index} />
+                                                );
+                                            })
+                                        }
                                     </div>
                                 </div>
                             </div>
@@ -91,7 +113,6 @@ function Projects() {
                                     placeholderSrc={portfolioBannerLowres}
                                     alt="portfolioBanner"
                                     effect="blur" />
-                                {/* <img loading="lazy" className="proj-img" src={portfolioBanner} alt="screenshots" /> */}
                             </div>
                             <h3>Portfolio V2</h3>
                             <span>May 2023 |
@@ -114,11 +135,13 @@ function Projects() {
                                 <div>
                                     <h4>Technologies Used</h4>
                                     <div>
-                                        <Chip className="tech-chip" label="Javascript" />
-                                        <Chip className="tech-chip" label="HTML" />
-                                        <Chip className="tech-chip" label="CSS" />
-                                        <Chip className="tech-chip" label="React" />
-                                        <Chip className="tech-chip" label="Material-UI" />
+                                        {
+                                            portfolioV2Tech.map((tech, index) => {
+                                                return (
+                                                    <Chip className="tech-chip" label={tech} key={index} />
+                                                );
+                                            })
+                                        }
                                     </div>
                                 </div>
                             </div>
@@ -136,7 +159,6 @@ function Projects() {
                                     placeholderSrc={portfoliov1Lowres}
                                     alt="portfoliov1"
                                     effect="blur" />
-                                {/* <img loading="lazy" className="proj-img" src={portfoliov1} alt="screenshots" /> */}
                             </div>
                             <h3>Portfolio V1</h3>
                             <span>July 2021 |
@@ -159,9 +181,13 @@ function Projects() {
                                 <div>
                                     <h4>Technologies Used</h4>
                                     <div>
-                                        <Chip className="tech-chip" label="JQuery" />
-                                        <Chip className="tech-chip" label="HTML" />
-                                        <Chip className="tech-chip" label="CSS" />
+                                        {
+                                            portfolioV1Tech.map((tech, index) => {
+                                                return (
+                                                    <Chip className="tech-chip" label={tech} key={index} />
+                                                );
+                                            })
+                                        }
                                     </div>
                                 </div>
                             </div>
