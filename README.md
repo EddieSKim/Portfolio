@@ -23,4 +23,4 @@ Run the following command to create a production-ready build of the application:
 # Additional Information
 For additional information on customizing and extending the React application,\
 refer to the project's documentation or check out the official React documentation at:\
-[React](https://react.dev/)\
+[React](https://react.dev/)
