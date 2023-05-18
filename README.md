@@ -6,6 +6,7 @@ Before you begin, ensure that you have the following installed on your machine:
 [Download and Install Node](https://nodejs.org/en/download)
 
 # :hammer: Installation :wrench:
+First go to the ```porfolio``` directory
 Run the following command to install the dependencies
 ```npm i ```
 
