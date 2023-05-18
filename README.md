@@ -1,15 +1,15 @@
 # Portfolio
 A simple website organizing my technical skills, projects and work experience
 
-# Prerequisite
+# :book: Prerequisite
 
 
-# Installation
+# :hammer: Installation :wrench:
 
 
-# Running the Application
+# :running: Running the Application
 
 
-# Building the Application
+# :sailboat: Building the Application
 
 
