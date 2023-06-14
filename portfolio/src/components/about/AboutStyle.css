@@ -8,18 +8,6 @@
   align-items: center;
 }
 
-@media screen and (max-height: 920px) {
-  .about-section {
-    height: 100vh;
-  }
-}
-
-@media screen and (max-height: 700px) {
-  .about-section {
-    height: 120vh;
-  }
-}
-
 .about-title {
   font-size: 1.4vmax;
 }
@@ -36,4 +24,31 @@
 
 .skill-icon {
   margin: 2px;
+}
+
+@media screen and (max-height: 920px) {
+  .about-section {
+    height: 100vh;
+  }
+  .about-title {
+    font-size: 3vmax;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .about-section {
+    height: 120vh;
+  }
+  .about-title {
+    font-size: 3vmax;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .about-section {
+    height: 120vh;
+  }
+  .about-title {
+    font-size: 3vmax;
+  }
 }

@@ -54,16 +54,25 @@
     .project-section {
         height: 110vh;
     }
+    .project-title {
+        font-size: 3vmax;
+    }
 }
 
 @media screen and (max-height: 700px) {
     .project-section {
-      height: 120vh;
+      height: 130vh;
+    }
+    .project-title {
+        font-size: 3vmax;
     }
 }
 
 @media screen and (max-height: 500px) {
     .project-section {
-        height: 140vh;
+        height: 160vh;
+    }
+    .project-title {
+        font-size: 3vmax;
     }
 }

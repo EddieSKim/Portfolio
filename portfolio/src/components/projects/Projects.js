@@ -44,7 +44,7 @@ const portfolioV1Tech = [
 
 function Projects() {
     const [tabValue, setTabValue] = useState(0);
-    const smallMediaScreen = useMediaQuery("(max-width: 500px");
+    const smallMediaScreen = useMediaQuery("max-width: 500px");
 
     const handleTabChange = (event, value) => {
         setTabValue(value)
