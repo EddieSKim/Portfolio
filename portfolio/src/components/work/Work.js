@@ -24,10 +24,12 @@ function Work() {
             <h2 className="work-title"><span>Work Experience</span></h2>
             <div className="work-wrapper">
                 <Tabs
+                    TabIndicatorProps={{ style: { backgroundColor: "#79cdbf", width: "5px" } }}
+                    textColor="inherit"
                     orientation={smallMediaScreen ? "horizontal" : "vertical"}
                     value={tabValue}
                     onChange={handleTabChange}>
-                    <Tab label="SkipTheDishes" />
+                    <Tab label={<span style={{ color: "#79cdbf" }}>SkipTheDishes</span>} />
                 </Tabs>
                 {tabValue === 0 && <>
                     <div className="experience-ctn">
@@ -49,7 +51,11 @@ function Work() {
                                 {
                                     skipTech.map((tech, index) => {
                                         return (
-                                            <Chip className="tech-chip" label={tech} key={index} />
+                                            <Chip
+                                                className="tech-chip"
+                                                label={tech}
+                                                key={index}
+                                                sx={{ backgroundColor: "#79cdbf" }} />
                                         );
                                     })
                                 }

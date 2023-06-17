@@ -55,6 +55,9 @@ function Projects() {
             <h2 className="project-title"><span>Projects</span></h2>
             <div className="project-wrapper">
                 <Tabs
+                    TabIndicatorProps={{ style: { backgroundColor: "black", width: "5px" } }}
+                    textColor="inherit"
+                    indicatorColor="inherit"
                     variant="fullWidth"
                     orientation={smallMediaScreen ? "horizontal" : "vertical"}
                     value={tabValue}
@@ -92,7 +95,11 @@ function Projects() {
                                         {
                                             motivTech.map((tech, index) => {
                                                 return (
-                                                    <Chip className="tech-chip" label={tech} key={index} />
+                                                    <Chip
+                                                        className="tech-chip"
+                                                        label={tech}
+                                                        key={index}
+                                                        sx={{ backgroundColor: "#f5f5dc" }} />
                                                 );
                                             })
                                         }
@@ -138,7 +145,11 @@ function Projects() {
                                         {
                                             portfolioV2Tech.map((tech, index) => {
                                                 return (
-                                                    <Chip className="tech-chip" label={tech} key={index} />
+                                                    <Chip
+                                                        sx={{ backgroundColor: "#f5f5dc" }}
+                                                        className="tech-chip"
+                                                        label={tech}
+                                                        key={index} />
                                                 );
                                             })
                                         }
@@ -184,7 +195,11 @@ function Projects() {
                                         {
                                             portfolioV1Tech.map((tech, index) => {
                                                 return (
-                                                    <Chip className="tech-chip" label={tech} key={index} />
+                                                    <Chip
+                                                        className="tech-chip"
+                                                        label={tech}
+                                                        key={index}
+                                                        sx={{ backgroundColor: "#f5f5dc" }} />
                                                 );
                                             })
                                         }

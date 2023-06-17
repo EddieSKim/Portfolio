@@ -5,7 +5,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: beige;
+    /* background-color: beige; */
+    background-color: #f5f5dc;
 }
 
 .banner-image {
@@ -16,6 +17,8 @@
 
 .banner-title {
     font-size: 1.4vmax;
+    font-family: Roboto;
+    color: black;
 }
 
 @media screen and (max-width: 500px) {
