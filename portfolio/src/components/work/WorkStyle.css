@@ -5,12 +5,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-color: beige; */
     background-color: #f5f5dc;
 }
 
 .work-title {
     position: relative;
+    font-family: "Nunito", sans-serif;
 }
 
 .work-wrapper {
@@ -25,9 +25,9 @@
     color: black;
 }
 
-/* .tech-ctn {
-    display: flex;
-} */
+.experience-info, .experience-title {
+    font-family: "Nunito Sans", sans-serif;
+}
 
 .tech-chip {
     margin: 2px;

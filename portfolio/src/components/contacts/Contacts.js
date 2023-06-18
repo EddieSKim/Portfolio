@@ -11,7 +11,7 @@ function Contacts() {
         <div className="contact-section" id="contacts">
             <div className="contacts-wrapper">
                 <h3 className="contact-h3">Get In Touch</h3>
-                <p>I am looking for new opportunities and will be excited to hear back from you. Also, feel free to reach out to say hello! &#128075;</p>
+                <p className="contacts-content">I am looking for new opportunities and will be excited to hear back from you. Also, feel free to reach out to say hello! &#128075;</p>
                 <div>
                     <Button
                         sx={{ color: "black"}}

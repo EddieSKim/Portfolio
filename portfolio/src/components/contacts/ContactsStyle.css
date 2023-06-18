@@ -18,9 +18,18 @@
 
 .contact-h3 {
     font-size: 1.4vmax;
+    font-family: "Nunito", sans-serif;
+}
+
+.contacts-content {
+    font-family: "Nunito Sans", sans-serif;
 }
 
 @media screen and (max-width: 500px) {
+    .contact-h3{
+        font-size: 3vmax;
+    }
+
     .contact-section {
         height: 60vh;
     }

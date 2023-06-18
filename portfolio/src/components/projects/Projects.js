@@ -62,9 +62,9 @@ function Projects() {
                     orientation={smallMediaScreen ? "horizontal" : "vertical"}
                     value={tabValue}
                     onChange={handleTabChange}>
-                    <Tab label="Motiv-Optimize" />
-                    <Tab label="Portfolio V2" />
-                    <Tab label="Portfolio V1" />
+                    <Tab label={<span style={{fontFamily: "Nunito, sans serif"}}>Motiv-Optimize</span>} />
+                    <Tab label={<span style={{fontFamily: "Nunito, sans serif"}}>Portfolio V2</span>} />
+                    <Tab label={<span style={{fontFamily: "Nunito, sans serif"}}>Portfolio V1</span>} />
                 </Tabs>
                 {
                     tabValue === 0 &&

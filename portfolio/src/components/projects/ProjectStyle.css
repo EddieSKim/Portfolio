@@ -9,12 +9,20 @@
 
 .project-title {
     font-size: 1.4vmax;
+    font-family: "Nunito", sans-serif;
 }
 
 .project-wrapper {
     display: grid;
     grid-template-columns: 150px 600px;
     min-height: 400px;
+}
+
+.project-info {
+    display: relative;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    font-family: "Nunito Sans", sans-serif;
 }
 
 .card {
@@ -30,12 +38,6 @@
 
 .tab-btn {
     width: 20vw;
-}
-
-.project-info {
-    display: relative;
-    padding-left: 2vw;
-    padding-right: 2vw;
 }
 
 .tech-chip {

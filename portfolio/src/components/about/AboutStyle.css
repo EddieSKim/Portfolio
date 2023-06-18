@@ -10,7 +10,7 @@
 
 .about-title {
   font-size: 1.4vmax;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 .content-body {
@@ -23,8 +23,16 @@
   margin-right: auto;
 }
 
+.skills-title {
+  font-family: 'Nunito', sans-serif;
+}
+
 .skill-icon {
   margin: 2px;
+}
+
+.body-text {
+  font-family: "Nunito Sans", sans-serif;
 }
 
 @media screen and (max-height: 920px) {

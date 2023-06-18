@@ -29,12 +29,12 @@ function Work() {
                     orientation={smallMediaScreen ? "horizontal" : "vertical"}
                     value={tabValue}
                     onChange={handleTabChange}>
-                    <Tab label={<span style={{ color: "#79cdbf" }}>SkipTheDishes</span>} />
+                    <Tab label={<span style={{ color: "#79cdbf", fontFamily: "Nunito, sans serif" }}>SkipTheDishes</span>} />
                 </Tabs>
                 {tabValue === 0 && <>
                     <div className="experience-ctn">
-                        <h3>Software Engineer Co-op | SkipTheDishes</h3>
-                        <span>August 2021 - August 2022</span>
+                        <h3 className="experience-title">Software Engineer Co-op | SkipTheDishes</h3>
+                        <span className="experience-info">August 2021 - August 2022</span>
                         <div className="experience-info">
                             <ul>
                                 <li>
