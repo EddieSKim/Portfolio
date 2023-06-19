@@ -7,10 +7,12 @@ import Work from './components/work/Work';
 import Banner from './components/banner/Banner';
 import Footer from './components/footer/Footer';
 import Socials from './components/socials/Socials';
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   return (
     <>
+    <Analytics mode={`production`}/>
       <Socials />
       <div className="container">
         <div className="header-ctn">
