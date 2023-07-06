@@ -12,6 +12,7 @@ const skills = [
     "Python",
     "Java",
     "C++",
+    "MySQL"
 ]
 
 function About() {
@@ -25,10 +26,10 @@ function About() {
                         Hello there! I am Eddie Kim and I've recently graduated npm from University of Calgary as a software engineer.
                     </p>
                     <p>
-                        I am most interested in Frontend development. I even did an internship as well as a front end developer! Currently seeking an entry level position in software development.
+                        I am currently seeking an entry level position in software development.
                     </p>
                     <p>
-                        I enjoy exercising, playing video games (mostly FPS), and drawing.
+                        I enjoy problem solving, exercising, playing video games (mostly FPS), and drawing.
                     </p>
                     <h4 className="skills-title">Skills & Experience</h4>
                     <div className="skills-wrapper">
