@@ -136,7 +136,7 @@ function Projects() {
                                         The objective of this project was to create a place to organize and showcase my work experiences and projects.
                                     </li>
                                     <li>
-                                        Currently(2023) there isn't much content, but hopefully it continues to grow as develop more projects and gain more experience.
+                                        This page will continue to grow as I develop more projects and gain more experience.
                                     </li>
                                 </ul>
                                 <div>
