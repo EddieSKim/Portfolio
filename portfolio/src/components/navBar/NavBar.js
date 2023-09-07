@@ -87,7 +87,7 @@ function NavBar() {
                                     <PermContactCalendarIcon />
                                 </Link>
                             </Button>
-                            <Button
+                            {/* <Button
                                 onClick={downloadFile}
                                 sx={{ color: "white" }}>
                                 <a href={fileRef}
@@ -96,7 +96,7 @@ function NavBar() {
                                     style={{ textDecoration: "none", color: "white" }}>
                                     Resume
                                 </a>
-                            </Button>
+                            </Button> */}
                         </Toolbar>
                     ) : (
                         <Toolbar className="nav-toolbar">
