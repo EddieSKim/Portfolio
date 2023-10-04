@@ -62,55 +62,12 @@ function Projects() {
                     orientation={smallMediaScreen ? "horizontal" : "vertical"}
                     value={tabValue}
                     onChange={handleTabChange}>
-                    <Tab label={<span style={{fontFamily: "Nunito, sans serif"}}>Motiv-Optimize</span>} />
                     <Tab label={<span style={{fontFamily: "Nunito, sans serif"}}>Portfolio V2</span>} />
+                    <Tab label={<span style={{fontFamily: "Nunito, sans serif"}}>Motiv-Optimize</span>} />
                     <Tab label={<span style={{fontFamily: "Nunito, sans serif"}}>Portfolio V1</span>} />
                 </Tabs>
                 {
                     tabValue === 0 &&
-                    <>
-                        <div className="project-info" id="motiv">
-                            <div className="card">
-                                <LazyLoadImage
-                                    className="proj-img"
-                                    src={motivHome}
-                                    placeholderSrc={motivHomeLowres}
-                                    alt="motiv-home"
-                                    effect="blur" />
-                            </div>
-                            <h3>Motiv-Optimize | University of Calgary</h3>
-                            <span>Sept 2022 - Apr 2023</span>
-                            <div>
-                                <ul>
-                                    <li>
-                                        Collaborated with a team and industry sponsor, <span>Motiv Digital</span>, to develop an application that helps marketing teams create efficient campaigns and websites by leveraging the power of Multi Armed Bandit algorithm
-                                    </li>
-                                    <li>
-                                        Placed <b>2nd</b> at the Schulich School of Engineering design fair in the software category
-                                    </li>
-                                </ul>
-                                <div>
-                                    <h4>Technologies Used</h4>
-                                    <div>
-                                        {
-                                            motivTech.map((tech, index) => {
-                                                return (
-                                                    <Chip
-                                                        className="tech-chip"
-                                                        label={tech}
-                                                        key={index}
-                                                        sx={{ backgroundColor: "#f5f5dc" }} />
-                                                );
-                                            })
-                                        }
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </>
-                }
-                {
-                    tabValue === 1 &&
                     <>
                         <div className="project-info" id="portfolio">
                             <div className="card">
@@ -150,6 +107,49 @@ function Projects() {
                                                         className="tech-chip"
                                                         label={tech}
                                                         key={index} />
+                                                );
+                                            })
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </>
+                }
+                {
+                    tabValue === 1 &&
+                    <>
+                        <div className="project-info" id="motiv">
+                            <div className="card">
+                                <LazyLoadImage
+                                    className="proj-img"
+                                    src={motivHome}
+                                    placeholderSrc={motivHomeLowres}
+                                    alt="motiv-home"
+                                    effect="blur" />
+                            </div>
+                            <h3>Motiv-Optimize | University of Calgary</h3>
+                            <span>Sept 2022 - Apr 2023</span>
+                            <div>
+                                <ul>
+                                    <li>
+                                        Collaborated with a team and industry sponsor, <span>Motiv Digital</span>, to develop an application that helps marketing teams create efficient campaigns and websites by leveraging the power of Multi Armed Bandit algorithm
+                                    </li>
+                                    <li>
+                                        Placed <b>2nd</b> at the Schulich School of Engineering design fair in the software category
+                                    </li>
+                                </ul>
+                                <div>
+                                    <h4>Technologies Used</h4>
+                                    <div>
+                                        {
+                                            motivTech.map((tech, index) => {
+                                                return (
+                                                    <Chip
+                                                        className="tech-chip"
+                                                        label={tech}
+                                                        key={index}
+                                                        sx={{ backgroundColor: "#f5f5dc" }} />
                                                 );
                                             })
                                         }

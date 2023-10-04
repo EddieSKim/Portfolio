@@ -23,7 +23,7 @@ function About() {
             <div className="content-body">
                 <div className="body-text">
                     <p>
-                        Hello there! I am Eddie Kim and I've recently graduated npm from University of Calgary as a software engineer.
+                        Hello there! I am Eddie Kim and I've recently graduated from University of Calgary as a software engineer.
                     </p>
                     <p>
                         I am currently seeking an entry level position in software development.
