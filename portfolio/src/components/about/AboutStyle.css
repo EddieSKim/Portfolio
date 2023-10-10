@@ -32,6 +32,7 @@
 }
 
 .body-text {
+  font-size: 20px;
   font-family: "Nunito Sans", sans-serif;
 }
 
@@ -39,8 +40,13 @@
   .about-section {
     height: 100vh;
   }
+
   .about-title {
     font-size: 3vmax;
+  }
+
+  .body-text {
+    font-size: 16px;
   }
 }
 
@@ -48,8 +54,13 @@
   .about-section {
     height: 120vh;
   }
+
   .about-title {
     font-size: 3vmax;
+  }
+
+  .body-text {
+    font-size: 14px;
   }
 }
 
@@ -57,7 +68,12 @@
   .about-section {
     height: 120vh;
   }
+
   .about-title {
     font-size: 3vmax;
+  }
+
+  .body-text {
+    font-size: 12px;
   }
 }

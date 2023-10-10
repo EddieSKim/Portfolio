@@ -8,7 +8,8 @@
 }
 
 .project-title {
-    font-size: 1.4vmax;
+    /* font-size: 1.4vmax; */
+    position: relative;
     font-family: "Nunito", sans-serif;
 }
 
@@ -40,6 +41,10 @@
     width: 20vw;
 }
 
+.projectContent {
+    font-size: 20px;
+}
+
 .tech-chip {
     margin: 2px;
 }
@@ -64,20 +69,28 @@
 
 @media screen and (max-height: 700px) {
     .project-section {
-        height: 130vh;
-    }
-
-    .project-title {
-        font-size: 3vmax;
-    }
-}
-
-@media screen and (max-height: 500px) {
-    .project-section {
         height: 160vh;
     }
 
     .project-title {
         font-size: 3vmax;
+    }
+
+    .projectContent {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-height: 500px) {
+    .project-section {
+        height: 180vh;
+    }
+
+    .project-title {
+        font-size: 3vmax;
+    }
+
+    .projectContent {
+        font-size: 12px;
     }
 }

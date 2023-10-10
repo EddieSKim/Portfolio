@@ -130,7 +130,7 @@ function Projects() {
                             </div>
                             <h3>Motiv-Optimize | University of Calgary</h3>
                             <span>Sept 2022 - Apr 2023</span>
-                            <div>
+                            <div className="projectContent">
                                 <ul>
                                     <li>
                                         Collaborated with a team and industry sponsor, <span>Motiv Digital</span>, to develop an application that helps marketing teams create efficient campaigns and websites by leveraging the power of Multi Armed Bandit algorithm
