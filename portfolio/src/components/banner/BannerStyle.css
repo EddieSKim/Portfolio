@@ -5,18 +5,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-color: beige; */
     background-color: #f5f5dc;
 }
 
 .banner-image {
-    width: 15vmax;
+    width: 20vw;
     height: auto;
     margin-bottom: 2vh;
 }
 
 .banner-title {
-    font-size: 1.4vmax;
+    font-size: 3rem;
     font-family: "Nunito", sans-serif;
     color: black;
 }
@@ -30,6 +29,6 @@
 
 @media screen and (max-height: 920px) {
     .banner-title {
-        font-size: 3vmax;
+        font-size: 2.5rem;
     }
 }

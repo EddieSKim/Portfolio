@@ -1,4 +1,19 @@
-.socials-bar {
+.socialsBar a,
+.socialsBar a:visited,
+.socialsBar a:hover,
+.socialsBar a:active {
+    text-decoration-skip-ink: auto;
+    color: #000;
+    transition: all 0.2s ease-in-out;
+}
+
+.socialsBar a:hover,
+.socialsBar a:focus {
+    color: #4f8f1e;
+    transition: all 0.2s ease-in-out;
+}
+
+.socialsBar {
     position: fixed;
     top: 50%;
     transform: translateY(-50%);
@@ -9,7 +24,7 @@
     margin-left: 1vw;
 }
 
-.socials-btn {
+.socialsBtn {
     animation: spin 0.5s linear;
     display: flex;
     justify-content: center;
@@ -23,24 +38,24 @@
     position: relative;
 }
 
-.icon-wrapper {
+.iconWrapper {
     position: relative;
     animation: slidein 0.5s linear;
 }
 
-.socials-icon:hover {
+.socialsIcon:hover {
     transform: scale(1.2);
 }
 
 
 @media screen and (max-width: 840px) {
-    .socials-bar {
+    .socialsBar {
         display: none;
     }
 }
 
 @media screen and (max-width: 900px) {
-    .socials-bar {
+    .socialsBar {
         margin-left: 0vw;
     }
 }
@@ -81,4 +96,3 @@
         transform: rotate(360deg);
     }
 }
-

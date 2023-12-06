@@ -1,5 +1,20 @@
+.projectContainer a,
+.projectContainer a:visited,
+.projectContainer a:hover,
+.projectContainer a:active {
+    text-decoration-skip-ink: auto;
+    color: black;
+    transition: all 0.2s ease-in-out;
+}
+
+.projectContainer a:hover,
+.projectContainer a:focus {
+    color: #4f8f1e;
+    transition: all 0.2s ease-in-out;
+}
+
 .projectContainer {
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,10 +23,10 @@
     flex-basis: auto;
 }
 
-.projectTitle {
+.projectHeader {
     margin-top: 5vh;
     font-family: "Nunito", sans-serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 .projectWrapper {
@@ -38,24 +53,27 @@
     margin: 4px;
 }
 
+.tabLabel {
+    font-family: "Nunito", "sans serif";
+}
+
+.projectTitle {
+    font-family: "Nunito", "sans serif";
+    font-size: 1.8rem;
+}
+
+@media screen and (max-width: 700px) {
+    .projectContent {
+        font-size: 1.1rem;
+    }
+}
+
 @media screen and (max-width: 500px) {
+    .projectContent {
+        font-size: 1rem;
+    }
+
     .projectWrapper {
         width: 95%;
-    }
-}
-
-@media screen and (max-height: 920px) {
-
-}
-
-@media screen and (max-height: 700px) {
-    .projectContent {
-        font-size: 14px;
-    }
-}
-
-@media screen and (max-height: 500px) {
-    .projectContent {
-        font-size: 12px;
     }
 }

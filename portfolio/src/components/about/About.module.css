@@ -1,0 +1,78 @@
+.aboutSection {
+    width: 100%;
+    min-height: 70vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+}
+
+.aboutTitle {
+    font-size: 2.5rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+.contentBody {
+    width: 50%;
+}
+
+.profileImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skillsTitle {
+    font-family: 'Nunito', sans-serif;
+}
+
+.skillIcon {
+    margin: 1vw;
+}
+
+.bodyText {
+    font-size: 1.2rem;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+@media screen and (max-width: 920px) {
+    .aboutTitle {
+        font-size: 3vmax;
+    }
+
+    .bodyText {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .aboutTitle {
+        font-size: 3vmax;
+    }
+
+    .bodyText {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .aboutSection {
+        min-height: 100vh;
+    }
+
+    .aboutTitle {
+        font-size: 2.5rem;
+    }
+
+    .contentBody {
+        width: 80%;
+    }
+
+    .body-text {
+        font-size: 1rem;
+    }
+}

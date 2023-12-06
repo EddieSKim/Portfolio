@@ -21,7 +21,7 @@ function Work() {
 
     return (
         <div className="work-section" id="work">
-            <h2 className="work-title"><span>Work Experience</span></h2>
+            <h2 className="work-title">Work Experience</h2>
             <div className="work-wrapper">
                 <Tabs
                     TabIndicatorProps={{ style: { backgroundColor: "#79cdbf", width: "5px" } }}

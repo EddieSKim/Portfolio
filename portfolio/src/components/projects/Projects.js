@@ -3,7 +3,6 @@ import {
     Tabs,
     Tab,
     Chip,
-    useMediaQuery,
     IconButton,
     Tooltip,
 } from "@mui/material";
@@ -13,6 +12,7 @@ import portfolioBanner from "../../images/projectImages/portfolio/banner.png";
 import portfolioBannerLowres from "../../images/projectImages/portfolio/banner-lowres.jpg";
 import portfoliov1 from "../../images/projectImages/portfoliov1/portfoliov1.png";
 import portfoliov1Lowres from "../../images/projectImages/portfoliov1/portfoliov1-lowres.jpg";
+import weatherAppMainLight from "../../images/projectImages/weatherApp/weatherAppMainLight.png"
 import FolderIcon from '@mui/icons-material/Folder';
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import styles from "./projects.module.css";
@@ -34,12 +34,29 @@ const portfolioV2Tech = [
     "CSS",
     "React",
     "Material-UI",
+    "Vercel"
 ]
 
 const portfolioV1Tech = [
     "JQuery",
     "HTML",
     "CSS",
+]
+
+const weatherAppTech = [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Material-UI",
+    "React",
+    "Vercel"
+]
+
+const projTitles = [
+    "Weather App",
+    "Portfolio V2",
+    "Motiv-Optimize",
+    "Portfolio V1"
 ]
 
 function Projects() {
@@ -52,10 +69,12 @@ function Projects() {
 
     return (
         <div className={styles.projectContainer} id="projects">
-            <h2 className={styles.projectTitle}>Projects</h2>
+            <h2 className={styles.projectHeader}>
+                Projects
+            </h2>
             <Tabs
-                sx={{ width: smallMediaScreen ?  "90%" : "50%" }}
-                //TabIndicatorProps={{ style: { backgroundColor: "black", width: "5px" } }}
+                sx={{ width: smallMediaScreen ? "90%" : "51%" }}
+                TabIndicatorProps={{ style: { backgroundColor: "black"} }}
                 textColor="inherit"
                 indicatorColor="inherit"
                 variant="scrollable"
@@ -63,21 +82,94 @@ function Projects() {
                 allowScrollButtonsMobile
                 value={tabValue}
                 onChange={handleTabChange}>
-                <Tab label={<span style={{ fontFamily: "Nunito, sans serif" }}>Portfolio V2</span>} />
-                <Tab label={<span style={{ fontFamily: "Nunito, sans serif" }}>Motiv-Optimize</span>} />
-                <Tab label={<span style={{ fontFamily: "Nunito, sans serif" }}>Portfolio V1</span>} />
+                {
+                    projTitles.map((projName, index) =>
+                        <Tab key={index}
+                            label={
+                                <span className={styles.tabLabel}>
+                                    {projName}
+                                </span>
+                            } />
+                    )
+                }
             </Tabs>
             <div className={styles.projectWrapper}>
                 {
                     tabValue === 0 &&
-                    <div className={styles.projectInfo} id="portfolio">
+                    <div className={styles.projectInfo} id="weather-app">
+                        <LazyLoadImage
+                            className={styles.projectImg}
+                            src={weatherAppMainLight}
+                            placeholderSrc={portfolioBannerLowres}
+                            alt="portfolioBanner"
+                            effect="blur" />
+                        <h2 className={styles.projectTitle}>
+                            <a
+                                style={{ textDecoration: "none" }}
+                                href="https://weather-app-eddie.vercel.app/"
+                                target="./">
+                                Weather App
+                            </a>
+                        </h2>
+                        <span>Dec 2023 |
+                            <Tooltip title="Source Code" placement="right">
+                                <IconButton
+                                    href="https://github.com/EddieSKim/WeatherApp/tree/main/weatherapp"
+                                    target="./"
+                                    children={<FolderIcon />} />
+                            </Tooltip>
+                        </span>
+                        <div className={styles.projectContent}>
+                            <ul>
+                                <li>
+                                    Weather app was created to provide users with accurate information about
+                                    current weather conditions and forecasts for specified location
+                                </li>
+                                <li>
+                                    It offers features such as city search bar with suggestions, current temperature, humidity,
+                                    hourly forecast, weekly forecast, light/dark theme switch and more
+                                </li>
+                                <li>
+                                    Used open weather map api and maptiler api for location searching and location weather
+                                </li>
+                            </ul>
+                            <div>
+                                <h4>Technologies Used</h4>
+                                <div>
+                                    {
+                                        weatherAppTech.map((tech, index) => {
+                                            return (
+                                                <Chip
+                                                    sx={{ backgroundColor: "#f5f5dc" }}
+                                                    className={styles.techChip}
+                                                    label={tech}
+                                                    key={index} />
+                                            );
+                                        })
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+                {
+                    tabValue === 1 &&
+                    <div className={styles.projectInfo} id="portfolioV2">
                         <LazyLoadImage
                             className={styles.projectImg}
                             src={portfolioBanner}
                             placeholderSrc={portfolioBannerLowres}
                             alt="portfolioBanner"
                             effect="blur" />
-                        <h3>Portfolio V2</h3>
+                        <h2
+                            className={styles.projectTitle}>
+                            <a
+                                style={{ textDecoration: "none" }}
+                                href="https://eddiekim.vercel.app/"
+                                target="./">
+                                Portfolio V2
+                            </a>
+                        </h2>
                         <span>May 2023 |
                             <Tooltip title="Source Code" placement="right">
                                 <IconButton
@@ -115,7 +207,7 @@ function Projects() {
                     </div>
                 }
                 {
-                    tabValue === 1 &&
+                    tabValue === 2 &&
                     <div className={styles.projectInfo} id="motiv">
                         <LazyLoadImage
                             className={styles.projectImg}
@@ -123,15 +215,22 @@ function Projects() {
                             placeholderSrc={motivHomeLowres}
                             alt="motiv-home"
                             effect="blur" />
-                        <h3>Motiv-Optimize |
-                            University of Calgary |
+                        <h2 className={styles.projectTitle}>
+                            <a
+                                style={{ textDecoration: "none" }}
+                                href="https://motiv-optimize.vercel.app/"
+                                target="./">
+                                Motiv-Optimize
+                            </a>
+                        </h2>
+                        <span>Sept 2022 - Apr 2023 |
                             <Tooltip title="Poster" placement="right">
                                 <IconButton
                                     href="https://schulich.ucalgary.ca/sites/default/files/teams/4/52099-Motiv%20Optimize%20ENG%2024%20Booth%2036.pdf"
                                     target="./"
                                     children={<FolderIcon />} />
-                            </Tooltip></h3>
-                        <span>Sept 2022 - Apr 2023</span>
+                            </Tooltip>
+                        </span>
                         <div className={styles.projectContent}>
                             <ul>
                                 <li>
@@ -161,15 +260,22 @@ function Projects() {
                     </div>
                 }
                 {
-                    tabValue === 2 &&
-                    <div className={styles.projectInfo} id="portfolio">
+                    tabValue === 3 &&
+                    <div className={styles.projectInfo} id="portfolioV1">
                         <LazyLoadImage
                             className={styles.projectImg}
                             src={portfoliov1}
                             placeholderSrc={portfoliov1Lowres}
                             alt="portfoliov1"
                             effect="blur" />
-                        <h3>Portfolio V1</h3>
+                        <h2 className={styles.projectTitle}>
+                        <a
+                                style={{ textDecoration: "none" }}
+                                href="https://eddieskim.github.io/html/index.html"
+                                target="./">
+                                Portfolio V1
+                            </a>
+                        </h2>
                         <span>July 2021 |
                             <Tooltip title="Source Code" placement="right">
                                 <IconButton
