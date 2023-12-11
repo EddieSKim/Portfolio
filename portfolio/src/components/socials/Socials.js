@@ -15,7 +15,7 @@ function Socials() {
                     <Button
                         sx={{ color: smallMediaScreen ? "white" : "black" }}
                         className={styles.socialsBtn}
-                        href={`mailto:edkm1212@gmail.com`}>
+                        href={`mailto:eddie.s.kim11@gmail.com`}>
                         <EmailIcon fontSize="large" />
                     </Button>
                 </Tooltip>

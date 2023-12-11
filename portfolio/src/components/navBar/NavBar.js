@@ -174,7 +174,7 @@ function NavBar() {
                 </Button> */}
                 <Button
                     sx={{ color: "black", marginTop: "auto" }}
-                    href={`mailto:edkm1212@gmail.com`}>
+                    href={`mailto:eddie.s.kim11@gmail.com`}>
                     <EmailIcon fontSize="small" />
                 </Button>
                 <Button
