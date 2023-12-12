@@ -9,11 +9,14 @@
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: auto;
+    background-color: #0d111b;
+    z-index: 4;
 }
 
 .aboutTitle {
     font-size: 2.5rem;
     font-family: 'Nunito', sans-serif;
+    color: #a5b1d3;
 }
 
 .contentBody {
@@ -36,6 +39,7 @@
 
 .bodyText {
     font-size: 1.2rem;
+    color: #a5b1d3;
     font-family: "Nunito Sans", sans-serif;
 }
 

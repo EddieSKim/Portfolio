@@ -5,13 +5,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #f5f5dc;
+    background-color: #0d111b;
 }
 
 .work-title {
     position: relative;
     font-family: "Nunito", sans-serif;
     font-size: 2.5rem;
+    color: #a5b1d3;
 }
 
 .work-wrapper {
@@ -23,7 +24,7 @@
 .experience-ctn {
     padding-left: 2vw;
     padding-right: 2vw;
-    color: black;
+    color: #a5b1d3;
 }
 
 .experience-info, .experience-title {

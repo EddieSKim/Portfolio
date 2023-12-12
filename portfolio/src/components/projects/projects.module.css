@@ -21,12 +21,14 @@
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: auto;
+    background-color: #0d111b;
 }
 
 .projectHeader {
     margin-top: 5vh;
     font-family: "Nunito", sans-serif;
     font-size: 2.5rem;
+    color: #a5b1d3;
 }
 
 .projectWrapper {
@@ -37,6 +39,7 @@
 
 .projectInfo {
     font-family: "Nunito Sans", sans-serif;
+    color: #a5b1d3;
 }
 
 .projectImg {
@@ -55,11 +58,13 @@
 
 .tabLabel {
     font-family: "Nunito", "sans serif";
+    color: #a5b1d3;
 }
 
 .projectTitle {
     font-family: "Nunito", "sans serif";
     font-size: 1.8rem;
+    color: #a5b1d3;
 }
 
 @media screen and (max-width: 700px) {

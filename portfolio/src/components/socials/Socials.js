@@ -28,7 +28,9 @@ function Socials() {
                         rel="noreferrer"
                         target="_blank"
                         className={styles.socialsBtn}>
-                        <LinkedInIcon fontSize="large" />
+                        <LinkedInIcon
+                            fontSize="large"
+                            sx={{ color: "#a5b1d3" }} />
                     </Button>
                 </Tooltip>
             </div>
@@ -40,7 +42,9 @@ function Socials() {
                         rel="noreferrer"
                         target="_blank"
                         className={styles.socialsBtn}>
-                        <GitHubIcon fontSize="large" />
+                        <GitHubIcon
+                            fontSize="large"
+                            sx={{ color: "#a5b1d3" }} />
                     </Button>
                 </Tooltip>
             </div>

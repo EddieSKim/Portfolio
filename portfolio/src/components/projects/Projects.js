@@ -74,7 +74,7 @@ function Projects() {
             </h2>
             <Tabs
                 sx={{ width: smallMediaScreen ? "90%" : "51%" }}
-                TabIndicatorProps={{ style: { backgroundColor: "black"} }}
+                TabIndicatorProps={{ style: { backgroundColor: "black" } }}
                 textColor="inherit"
                 indicatorColor="inherit"
                 variant="scrollable"
@@ -105,7 +105,10 @@ function Projects() {
                             effect="blur" />
                         <h2 className={styles.projectTitle}>
                             <a
-                                style={{ textDecoration: "none" }}
+                                style={{
+                                    textDecoration: "none",
+                                    color: "#a5b1d3"
+                                }}
                                 href="https://weather-app-eddie.vercel.app/"
                                 target="./">
                                 Weather App
@@ -269,7 +272,7 @@ function Projects() {
                             alt="portfoliov1"
                             effect="blur" />
                         <h2 className={styles.projectTitle}>
-                        <a
+                            <a
                                 style={{ textDecoration: "none" }}
                                 href="https://eddieskim.github.io/html/index.html"
                                 target="./">
