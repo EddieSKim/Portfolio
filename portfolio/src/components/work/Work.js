@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Tabs, Tab, Chip, useMediaQuery } from "@mui/material";
 import "./WorkStyle.css";
+import { motion, useAnimation, useInView } from 'framer-motion';
 
 const skipTech = [
     "Javascript",
@@ -15,14 +16,42 @@ function Work() {
     const [tabValue, setTabValue] = useState(0);
     const smallMediaScreen = useMediaQuery("(max-width: 500px");
 
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true });
+    const mainControls = useAnimation();
+
     const handleTabChange = (event, value) => {
         setTabValue(value);
     }
 
+    useEffect(() => {
+        if (isInView) {
+            mainControls.start("visible");
+        }
+    }, [isInView])
+
     return (
         <div className="work-section" id="work">
-            <h2 className="work-title">Work Experience</h2>
-            <div className="work-wrapper">
+            <motion.h2
+                className="work-title"
+                ref={ref}
+                variants={{
+                    hidden: { opacity: 0, y: 100 },
+                    visible: { opacity: 1, y: 0 },
+                }}
+                initial="hidden"
+                animate={mainControls}
+                transition={{ duration: 0.5 }}>Work Experience</motion.h2>
+            <motion.div
+                className="work-wrapper"
+                ref={ref}
+                variants={{
+                    hidden: { opacity: 0, y: 100 },
+                    visible: { opacity: 1, y: 0 },
+                }}
+                initial="hidden"
+                animate={mainControls}
+                transition={{ duration: 0.75, delay: 0.25 }}>
                 <Tabs
                     TabIndicatorProps={{ style: { backgroundColor: "#79cdbf", width: "5px" } }}
                     textColor="inherit"
@@ -63,7 +92,7 @@ function Work() {
                         </div>
                     </div>
                 </>}
-            </div>
+            </motion.div>
         </div>
     );
 }

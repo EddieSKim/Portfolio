@@ -18,7 +18,10 @@ function App() {
     const timer = setTimeout(() => {
       setLoading(false);
     }, 1000);
-    return () => clearTimeout(timer);
+
+    return () => {
+      clearTimeout(timer);
+    }
   }, [])
 
   return (
@@ -45,7 +48,6 @@ function App() {
             </div>
           </div>
       }
-
     </>
   );
 }

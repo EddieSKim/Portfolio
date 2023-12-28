@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Chip } from "@mui/material";
 import styles from "./About.module.css";
+import { motion, useAnimation, useInView } from 'framer-motion';
 
 const skills = [
     "Javascript",
@@ -16,11 +17,39 @@ const skills = [
 ]
 
 function About() {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true });
+    const mainControls = useAnimation();
+
+    useEffect(() => {
+        if (isInView) {
+            mainControls.start("visible");
+        }
+    }, [isInView])
 
     return (
         <div className={styles.aboutSection} id="about">
-            <h2 className={styles.aboutTitle}>About Me</h2>
-            <div className={styles.contentBody}>
+            <motion.h2
+                ref={ref}
+                className={styles.aboutTitle}
+                variants={{
+                    hidden: { opacity: 0, y: 100 },
+                    visible: { opacity: 1, y: 0 },
+                }}
+                initial="hidden"
+                animate={mainControls}
+                transition={{ duration: 0.5 }}
+            >About Me
+            </motion.h2>
+            <motion.div ref={ref}
+                className={styles.contentBody}
+                variants={{
+                    hidden: { opacity: 0, y: 100 },
+                    visible: { opacity: 1, y: 0 },
+                }}
+                initial="hidden"
+                animate={mainControls}
+                transition={{ duration: 0.75, delay: 0.25 }}>
                 <div className={styles.bodyText}>
                     <p>
                         Hello there! I am Eddie Kim and I've recently graduated from University of Calgary as a software engineer.
@@ -49,7 +78,7 @@ function About() {
                         }
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </div>
     );
 }
