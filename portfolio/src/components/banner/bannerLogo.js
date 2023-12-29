@@ -34,25 +34,130 @@ function BannerLogo() {
                     strokeWidth="0.265"
                     transform="translate(407.57 56.368)"
                 >
-                    <path
+                    {/* First Letter D */}
+                    <motion.path
                         fill="#fff"
                         d="M-298.779-2.5v50l8.66 5v-5l4.33 2.5v-5l4.33 2.5v-30l-4.33-2.5v-5l-4.33-2.5v-5zm4.33 12.5l4.33 2.5v5l4.33 2.5v20l-4.33-2.5v5l-4.33-2.5z"
-                    ></path>
-                    <path fill="#fff" d="M-298.779-2.5l4.33-2.5 8.66 5-4.33 2.5z"></path>
-                    <path fill="#fff" d="M-285.788 0v5l-4.33 2.5v-5z"></path>
-                    <path fill="#fff" d="M-285.788 5l4.33 2.5-4.33 2.5-4.33-2.5z"></path>
-                    <path fill="#fff" d="M-281.458 7.5v5l-4.33 2.5v-5z"></path>
-                    <path fill="#fff" d="M-281.458 12.5l4.33 2.5-4.33 2.5-4.33-2.5z"></path>
-                    <path fill="#fff" d="M-277.128 15v30l-4.33 2.5v-30z"></path>
-                    <path fill="#ccc" d="M-290.119 52.5l4.33-2.5-4.33-2.5z"></path>
-                    <path fill="#ccc" d="M-285.788 50l4.33-2.5-4.33-2.5z"></path>
-                    <path
+                        variants={{
+                            hidden: { opacity: 0, y: -20 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ duration: 1, delay: 0.25 }}
+                        ease="easeInOut"
+                    />
+                    <motion.path fill="#fff" d="M-298.779-2.5l4.33-2.5 8.66 5-4.33 2.5z"
+                        variants={{
+                            hidden: { opacity: 0, y: -20 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ duration: 1, delay: 0.25 }}
+                        ease="easeInOut" />
+                    <motion.path fill="#fff" d="M-285.788 0v5l-4.33 2.5v-5z"
+                        variants={{
+                            hidden: { opacity: 0, y: -20 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ duration: 1, delay: 0.25 }}
+                        ease="easeInOut" />
+                    <motion.path fill="#fff" d="M-285.788 5l4.33 2.5-4.33 2.5-4.33-2.5z"
+                        variants={{
+                            hidden: { opacity: 0, y: -20 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ duration: 1, delay: 0.25 }}
+                        ease="easeInOut" />
+                    <motion.path fill="#fff" d="M-281.458 7.5v5l-4.33 2.5v-5z"
+                        variants={{
+                            hidden: { opacity: 0, y: -20 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ duration: 1, delay: 0.25 }}
+                        ease="easeInOut" />
+                    <motion.path fill="#fff" d="M-281.458 12.5l4.33 2.5-4.33 2.5-4.33-2.5z"
+                        variants={{
+                            hidden: { opacity: 0, y: -20 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ duration: 1, delay: 0.25 }}
+                        ease="easeInOut" />
+                    <motion.path fill="#fff" d="M-277.128 15v30l-4.33 2.5v-30z"
+                        variants={{
+                            hidden: { opacity: 0, y: -20 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ duration: 1, delay: 0.25 }}
+                        ease="easeInOut" />
+                    <motion.path fill="#ccc" d="M-290.119 52.5l4.33-2.5-4.33-2.5z"
+                        variants={{
+                            hidden: { opacity: 0, y: -20 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ duration: 1, delay: 0.25 }}
+                        ease="easeInOut" />
+                    <motion.path fill="#ccc" d="M-285.788 50l4.33-2.5-4.33-2.5z"
+                        variants={{
+                            hidden: { opacity: 0, y: -20 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ duration: 1, delay: 0.25 }}
+                        ease="easeInOut" />
+                    <motion.path
                         fill="none"
                         d="M-294.449 10v30l4.33 2.5v-5l4.33 2.5V20l-4.33-2.5v-5z"
-                    ></path>
-                    <path fill="#b3b3b3" d="M-294.449 40l4.33-2.5v5z"></path>
-                    <path fill="#ccc" d="M-290.119 37.5v-25l-4.33-2.5v30z"></path>
-                    <path fill="#ccc" d="M-290.119 37.5l4.33-2.5v5z"></path>
+                        variants={{
+                            hidden: { opacity: 0, y: -20 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ duration: 1, delay: 0.25 }}
+                        ease="easeInOut"
+                    />
+                    <motion.path fill="#b3b3b3" d="M-294.449 40l4.33-2.5v5z"
+                        variants={{
+                            hidden: { opacity: 0, y: -20 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ duration: 1, delay: 0.25 }}
+                        ease="easeInOut" />
+                    <motion.path fill="#ccc" d="M-290.119 37.5v-25l-4.33-2.5v30z"
+                        variants={{
+                            hidden: { opacity: 0, y: -20 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ duration: 1, delay: 0.25 }}
+                        ease="easeInOut" />
+                    <motion.path fill="#ccc" d="M-290.119 37.5l4.33-2.5v5z"
+                        variants={{
+                            hidden: { opacity: 0, y: -20 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ duration: 1, delay: 0.25 }}
+                        ease="easeInOut" />
                 </g>
                 <g
                     stroke="#000"
@@ -62,25 +167,130 @@ function BannerLogo() {
                     strokeWidth="0.265"
                     transform="translate(407.57 56.368)"
                 >
-                    <path
+                    {/* Second Letter D */}
+                    <motion.path
                         fill="#fff"
                         d="M-272.798 12.5v50l8.66 5v-5l4.33 2.5v-5l4.33 2.5v-30l-4.33-2.5v-5l-4.33-2.5v-5zm4.33 12.5l4.33 2.5v5l4.33 2.5v20l-4.33-2.5v5l-4.33-2.5z"
-                    ></path>
-                    <path fill="#fff" d="M-272.798 12.5l4.33-2.5 8.66 5-4.33 2.5z"></path>
-                    <path fill="#fff" d="M-259.808 15v5l-4.33 2.5v-5z"></path>
-                    <path fill="#fff" d="M-259.808 20l4.33 2.5-4.33 2.5-4.33-2.5z"></path>
-                    <path fill="#fff" d="M-255.477 22.5v5l-4.33 2.5v-5z"></path>
-                    <path fill="#fff" d="M-255.477 27.5l4.33 2.5-4.33 2.5-4.33-2.5z"></path>
-                    <path fill="#fff" d="M-251.147 30v30l-4.33 2.5v-30z"></path>
-                    <path fill="#ccc" d="M-264.138 67.5l4.33-2.5-4.33-2.5z"></path>
-                    <path fill="#ccc" d="M-259.808 65l4.33-2.5-4.33-2.5z"></path>
-                    <path
+                        variants={{
+                            hidden: { opacity: 0, y: -20 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ duration: 1, delay: 0.5 }}
+                        ease="easeInOut"
+                    />
+                    <motion.path fill="#fff" d="M-272.798 12.5l4.33-2.5 8.66 5-4.33 2.5z"
+                        variants={{
+                            hidden: { opacity: 0, y: -20 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ duration: 1, delay: 0.5 }}
+                        ease="easeInOut" />
+                    <motion.path fill="#fff" d="M-259.808 15v5l-4.33 2.5v-5z"
+                        variants={{
+                            hidden: { opacity: 0, y: -20 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ duration: 1, delay: 0.5 }}
+                        ease="easeInOut" />
+                    <motion.path fill="#fff" d="M-259.808 20l4.33 2.5-4.33 2.5-4.33-2.5z"
+                        variants={{
+                            hidden: { opacity: 0, y: -20 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ duration: 1, delay: 0.5 }}
+                        ease="easeInOut" />
+                    <motion.path fill="#fff" d="M-255.477 22.5v5l-4.33 2.5v-5z"
+                        variants={{
+                            hidden: { opacity: 0, y: -20 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ duration: 1, delay: 0.5 }}
+                        ease="easeInOut" />
+                    <motion.path fill="#fff" d="M-255.477 27.5l4.33 2.5-4.33 2.5-4.33-2.5z"
+                        variants={{
+                            hidden: { opacity: 0, y: -20 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ duration: 1, delay: 0.5 }}
+                        ease="easeInOut" />
+                    <motion.path fill="#fff" d="M-251.147 30v30l-4.33 2.5v-30z"
+                        variants={{
+                            hidden: { opacity: 0, y: -20 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ duration: 1, delay: 0.5 }}
+                        ease="easeInOut" />
+                    <motion.path fill="#ccc" d="M-264.138 67.5l4.33-2.5-4.33-2.5z"
+                        variants={{
+                            hidden: { opacity: 0, y: -20 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ duration: 1, delay: 0.5 }}
+                        ease="easeInOut" />
+                    <motion.path fill="#ccc" d="M-259.808 65l4.33-2.5-4.33-2.5z"
+                        variants={{
+                            hidden: { opacity: 0, y: -20 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ duration: 1, delay: 0.5 }}
+                        ease="easeInOut" />
+                    <motion.path
                         fill="none"
                         d="M-268.468 25v30l4.33 2.5v-5l4.33 2.5V35l-4.33-2.5v-5z"
-                    ></path>
-                    <path fill="#b3b3b3" d="M-268.468 55l4.33-2.5v5z"></path>
-                    <path fill="#ccc" d="M-264.138 52.5v-25l-4.33-2.5v30z"></path>
-                    <path fill="#ccc" d="M-264.138 52.5l4.33-2.5v5z"></path>
+                        variants={{
+                            hidden: { opacity: 0, y: -20 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ duration: 1, delay: 0.5 }}
+                        ease="easeInOut"
+                    />
+                    <motion.path fill="#b3b3b3" d="M-268.468 55l4.33-2.5v5z"
+                        variants={{
+                            hidden: { opacity: 0, y: -20 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ duration: 1, delay: 0.5 }}
+                        ease="easeInOut" />
+                    <motion.path fill="#ccc" d="M-264.138 52.5v-25l-4.33-2.5v30z"
+                        variants={{
+                            hidden: { opacity: 0, y: -20 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ duration: 1, delay: 0.5 }}
+                        ease="easeInOut" />
+                    <motion.path fill="#ccc" d="M-264.138 52.5l4.33-2.5v5z"
+                        variants={{
+                            hidden: { opacity: 0, y: -20 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ duration: 1, delay: 0.5 }}
+                        ease="easeInOut" />
                 </g>
                 <g
                     fill="#fff"
@@ -91,9 +301,34 @@ function BannerLogo() {
                     strokeWidth="0.265"
                     transform="translate(407.57 56.368)"
                 >
-                    <path d="M-246.817 27.5v50l4.33 2.5V30z"></path>
-                    <path d="M-246.817 27.5l4.33-2.5 4.33 2.5-4.33 2.5z"></path>
-                    <path d="M-238.157 27.5v50l-4.33 2.5V30z"></path>
+                    {/* Letter I */}
+                    <motion.path d="M-246.817 27.5v50l4.33 2.5V30z"
+                        variants={{
+                            hidden: { opacity: 0, y: -20 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ duration: 1, delay: 0.75 }}
+                        ease="easeInOut" />
+                    <motion.path d="M-246.817 27.5l4.33-2.5 4.33 2.5-4.33 2.5z"
+                        variants={{
+                            hidden: { opacity: 0, y: -20 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ duration: 1, delay: 0.75 }}
+                        ease="easeInOut" />
+                    <motion.path d="M-238.157 27.5v50l-4.33 2.5V30z"
+                        variants={{
+                            hidden: { opacity: 0, y: -20 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ duration: 1, delay: 0.75 }}
+                        ease="easeInOut" />
                 </g>
                 <g
                     stroke="#000"
@@ -103,22 +338,79 @@ function BannerLogo() {
                     strokeWidth="0.265"
                     transform="translate(407.57 56.368)"
                 >
-                    <path fill="#fff" d="M-324.76-17.5l4.33-2.5 17.321 10-4.33 2.5z"></path>
-                    <path fill="#fff" d="M-303.109-10V0l-4.33 2.5v-10z"></path>
-                    <path fill="#fff" d="M-307.439 12.5l4.33-2.5v10l-4.33 2.5z"></path>
-                    <path fill="#fff" d="M-307.439 42.5l4.33-2.5V30l-4.33 2.5z"></path>
-                    <path
+                    {/* First Letter E */}
+                    <motion.path fill="#fff" d="M-324.76-17.5l4.33-2.5 17.321 10-4.33 2.5z"
+                        variants={{
+                            hidden: { opacity: 0, y: -20 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ duration: 1 }}
+                        ease="easeInOut" />
+                    <motion.path fill="#fff" d="M-303.109-10V0l-4.33 2.5v-10z"
+                        variants={{
+                            hidden: { opacity: 0, y: -20 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ duration: 1 }}
+                        ease="easeInOut" />
+                    <motion.path fill="#fff" d="M-307.439 12.5l4.33-2.5v10l-4.33 2.5z"
+                        variants={{
+                            hidden: { opacity: 0, y: -20 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ duration: 1 }}
+                        ease="easeInOut" />
+                    <motion.path fill="#fff" d="M-307.439 42.5l4.33-2.5V30l-4.33 2.5z"
+                        variants={{
+                            hidden: { opacity: 0, y: -20 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ duration: 1 }}
+                        ease="easeInOut" />
+                    <motion.path
                         fill="#fff"
                         d="M-324.76-17.5v50l17.321 10v-10l-12.99-7.5V15l12.99 7.5v-10l-12.99-7.5V-5l12.99 7.5v-10z"
-                    ></path>
-                    <path
+                        variants={{
+                            hidden: { opacity: 0, y: -20 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ duration: 1 }}
+                        ease="easeInOut"
+                    />
+                    <motion.path
                         fill="#ccc"
                         d="M-303.109 10l-12.99-7.5v-5l-4.33-2.5V5l4.33-2.5-4.33 2.5 12.99 7.5z"
-                    ></path>
-                    <path
+                        variants={{
+                            hidden: { opacity: 0, y: -20 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ duration: 1 }}
+                        ease="easeInOut"
+                    />
+                    <motion.path
                         fill="#ccc"
                         d="M-303.109 30l-12.99-7.5v-5l-4.33-2.5v10l4.33-2.5-4.33 2.5 12.99 7.5z"
-                    ></path>
+                        variants={{
+                            hidden: { opacity: 0, y: -20 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ duration: 1 }}
+                        ease="easeInOut"
+                    />
                 </g>
                 <g
                     stroke="#000"
@@ -128,6 +420,7 @@ function BannerLogo() {
                     strokeWidth="0.265"
                     transform="translate(217.55 -50.587)"
                 >
+                    {/* Bottom monitor frame */}
                     <g>
                         <path fill="none" d="M-147.308 70.74l8.731-5.027z"></path>
                         <path fill="#fff" d="M-155.962 55.882l8.66 15v80l-8.66 5z"></path>
@@ -157,22 +450,85 @@ function BannerLogo() {
                     strokeWidth="0.265"
                     transform="translate(407.57 56.368)"
                 >
-                    <path fill="#fff" d="M-233.827 35l4.33-2.5 17.32 10-4.33 2.5z"></path>
-                    <path fill="#fff" d="M-212.176 42.5v10l-4.33 2.5V45z"></path>
-                    <path fill="#fff" d="M-216.506 65l4.33-2.5v10l-4.33 2.5z"></path>
-                    <path fill="#fff" d="M-216.506 95l4.33-2.5v-10l-4.33 2.5z"></path>
-                    <path
+                    {/* Last Letter E */}
+                    <motion.path
+                        fill="#fff"
+                        d="M-233.827 35l4.33-2.5 17.32 10-4.33 2.5z"
+                        variants={{
+                            hidden: { opacity: 0, y: -20 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ duration: 1, delay: 1 }}
+                        ease="easeInOut"></motion.path>
+                    <motion.path
+                        fill="#fff"
+                        d="M-212.176 42.5v10l-4.33 2.5V45z"
+                        variants={{
+                            hidden: { opacity: 0, y: -20 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ duration: 1, delay: 1 }}
+                        ease="easeInOut"></motion.path>
+                    <motion.path
+                        fill="#fff"
+                        d="M-216.506 65l4.33-2.5v10l-4.33 2.5z"
+                        variants={{
+                            hidden: { opacity: 0, y: -20 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ duration: 1, delay: 1 }}
+                        ease="easeInOut" />
+                    <motion.path fill="#fff" d="M-216.506 95l4.33-2.5v-10l-4.33 2.5z"
+                        variants={{
+                            hidden: { opacity: 0, y: -20 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ duration: 1, delay: 1 }}
+                        ease="easeInOut" />
+                    <motion.path
                         fill="#fff"
                         d="M-233.827 35v50l17.32 10V85l-12.99-7.5v-10l12.99 7.5V65l-12.99-7.5v-10l12.99 7.5V45z"
-                    ></path>
-                    <path
+                        variants={{
+                            hidden: { opacity: 0, y: -20 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ duration: 1, delay: 1 }}
+                        ease="easeInOut"
+                    />
+                    <motion.path
                         fill="#ccc"
                         d="M-212.176 62.5l-12.99-7.5v-5l-4.33-2.5v10l4.33-2.5-4.33 2.5 12.99 7.5z"
-                    ></path>
-                    <path
+                        variants={{
+                            hidden: { opacity: 0, y: -20 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ duration: 1, delay: 1 }}
+                        ease="easeInOut"
+                    />
+                    <motion.path
                         fill="#ccc"
                         d="M-212.176 82.5l-12.99-7.5v-5l-4.33-2.5v10l4.33-2.5-4.33 2.5 12.99 7.5z"
-                    ></path>
+                        variants={{
+                            hidden: { opacity: 0, y: -20 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ duration: 1, delay: 1 }}
+                        ease="easeInOut"
+                    />
                 </g>
                 <g
                     fill="#fff"
@@ -183,8 +539,27 @@ function BannerLogo() {
                     strokeWidth="0.265"
                     transform="translate(187.02 12.11)"
                 >
-                    <path d="M-125.44-6.957l8.66 15 129.905 75 8.66-5z"></path>
-                    <path d="M-125.44-6.957l8.66-5 147.225 85-8.589 4.973z"></path>
+                    {/* Top monitor frame */}
+                    <motion.path
+                        d="M-125.44-6.957l8.66 15 129.905 75 8.66-5z"
+                        variants={{
+                            hidden: { opacity: 0, y: -10 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ duration: 1, delay: 1.25 }}
+                        ease="easeInOut"></motion.path>
+                    <motion.path
+                        d="M-125.44-6.957l8.66-5 147.225 85-8.589 4.973z"
+                        variants={{
+                            hidden: { opacity: 0, y: -10 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ duration: 1, delay: 1.25 }}
+                        ease="easeInOut"></motion.path>
                 </g>
                 <g
                     fill="#fff"
