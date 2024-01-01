@@ -34,9 +34,7 @@ function App() {
           <div>
             <Socials />
             <div className="container">
-              <div className="header-ctn">
                 <NavBar />
-              </div>
               <Banner />
               <div className='wrapper'>
                 <About />

@@ -1,63 +1,68 @@
-.work-section {
+.workSection {
     width: 100%;
-    height: 65vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
     background-color: #f5f5dc;
 }
 
-.work-title {
+.workTitle {
     position: relative;
     font-family: "Nunito", sans-serif;
+    margin-top: 5vh;
     font-size: 2.5rem;
 }
 
-.work-wrapper {
+.workWrapper {
     display: grid;
     grid-template-columns: 150px 600px;
     min-height: 300px;
 }
 
-.experience-ctn {
+.experienceCtn {
     padding-left: 2vw;
     padding-right: 2vw;
     color: black;
 }
 
-.experience-info, .experience-title {
+.experienceInfo, .experienceTitle {
     font-family: "Nunito Sans", sans-serif;
 }
 
-.experience-info {
-    /* font-size: 20px; */
-    font-size: 1.4vh;
+.experienceInfo {
+    font-size: 1rem;
 }
 
-.tech-chip {
+.techCtn {
+    margin-bottom: 2vh;
+}
+
+.techChip {
     margin: 2px;
 }
 
-@media screen and (max-height: 920px) {
-    .work-section {
-        height: 100vh;
-        width: 100vw;
+@media screen and (max-width: 920px) {
+    .workSection {
+        min-height: 100vh;
+        width: 100%;
     }
 
-    .experience-info {
+    .experienceInfo {
         font-size: 14px;
     }
 }
 
 @media screen and (max-width: 500px) {
-    .work-wrapper {
+    .workWrapper {
         display: flex;
         flex-direction: column;
         width: 100vw;
     }
 
-    .experience-info {
+    .experienceInfo {
         font-size: 13px;
     }
 }

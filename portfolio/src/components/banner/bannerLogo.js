@@ -1,23 +1,7 @@
 import React from "react";
-import { motion, useAnimation } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 function BannerLogo() {
-    const pathVariants = {
-        hidden: {
-            opacity: 0,
-            pathLength: 0
-        },
-
-        visible: {
-            opacity: 1,
-            pathLength: 1,
-        }
-    }
-
-    const pathTransition = {
-        duration: 2,
-        ease: "easeInOut"
-    }
 
     return (
         <>
