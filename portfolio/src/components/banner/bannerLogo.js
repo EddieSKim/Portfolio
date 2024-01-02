@@ -406,8 +406,8 @@ function BannerLogo() {
                 >
                     {/* Bottom monitor frame */}
                     <g>
-                        <path fill="none" d="M-147.308 70.74l8.731-5.027z"/>
-                        <path fill="#fff" d="M-155.962 55.882l8.66 15v80l-8.66 5z"/>
+                        <path fill="none" d="M-147.308 70.74l8.731-5.027z" />
+                        <path fill="#fff" d="M-155.962 55.882l8.66 15v80l-8.66 5z" />
                         <path
                             fill="#ccc"
                             fillOpacity="1"
@@ -524,8 +524,8 @@ function BannerLogo() {
                     transform="translate(187.02 12.11)"
                 >
                     {/* Top monitor frame */}
-                    <path d="M-125.44-6.957l8.66 15 129.905 75 8.66-5z"/>
-                    <path d="M-125.44-6.957l8.66-5 147.225 85-8.589 4.973z"/>
+                    <path d="M-125.44-6.957l8.66 15 129.905 75 8.66-5z" />
+                    <path d="M-125.44-6.957l8.66-5 147.225 85-8.589 4.973z" />
                 </g>
                 <g
                     fill="#fff"
@@ -536,12 +536,12 @@ function BannerLogo() {
                     strokeWidth="0.265"
                     transform="translate(217.55 -50.587)"
                 >
-                    <path d="M-8.738 240.882l-8.66-15v-80l8.66-5z"/>
-                    <path d="M-8.738 140.882l8.59-4.973v100l-8.66 5z"/>
-                    <path d="M-4.525 217.27v5l.866.5v-5z"/>
-                    <path d="M-4.525 217.27l.866-.5.866.5v5l-.866.5v-5l.866-.5-.866.5z"/>
-                    <path d="M-4.525 210.27v5l.866.5v-5z"/>
-                    <path d="M-4.525 210.27l.866-.5.866.5v5l-.866.5v-5l.866-.5-.866.5z"/>
+                    <path d="M-8.738 240.882l-8.66-15v-80l8.66-5z" />
+                    <path d="M-8.738 140.882l8.59-4.973v100l-8.66 5z" />
+                    <path d="M-4.525 217.27v5l.866.5v-5z" />
+                    <path d="M-4.525 217.27l.866-.5.866.5v5l-.866.5v-5l.866-.5-.866.5z" />
+                    <path d="M-4.525 210.27v5l.866.5v-5z" />
+                    <path d="M-4.525 210.27l.866-.5.866.5v5l-.866.5v-5l.866-.5-.866.5z" />
                 </g>
                 <g
                     fill="#fff"
@@ -552,8 +552,8 @@ function BannerLogo() {
                     strokeWidth="0.265"
                     transform="translate(407.297 54.881)"
                 >
-                    <path d="M-407.032 95l60.622-35 138.564 80-60.622 35z"/>
-                    <path d="M-407.032 95v10l138.564 80 60.622-35v-10l-60.622 35v10-10z"/>
+                    <path d="M-407.032 95l60.622-35 138.564 80-60.622 35z" />
+                    <path d="M-407.032 95v10l138.564 80 60.622-35v-10l-60.622 35v10-10z" />
                 </g>
                 <g
                     fill="#fff"
@@ -564,8 +564,8 @@ function BannerLogo() {
                     strokeWidth="0.265"
                     transform="translate(407.297 54.881)"
                 >
-                    <path d="M-294.449 80v10l17.32 10V90z"/>
-                    <path d="M-272.798 92.5v10l-4.33-2.5V90z"/>
+                    <path d="M-294.449 80v10l17.32 10V90z" />
+                    <path d="M-272.798 92.5v10l-4.33-2.5V90z" />
                 </g>
                 <g
                     stroke="#000"
@@ -575,54 +575,54 @@ function BannerLogo() {
                     strokeWidth="0.265"
                     transform="translate(407.297 54.881)"
                 >
-                    <path fill="#fff" d="M-242.487 125l-8.66 5 8.66 5 8.66-5z"/>
+                    <path fill="#fff" d="M-242.487 125l-8.66 5 8.66 5 8.66-5z" />
                     <g>
-                        <path fill="#fff" d="M-346.41 65l-8.66 5 8.66 5 8.66-5z"/>
+                        <path fill="#fff" d="M-346.41 65l-8.66 5 8.66 5 8.66-5z" />
                         <path
                             fill="gray"
                             d="M-355.07 70v1l8.66 5 8.66-5v-1l-8.66 5v1-1z"
                         />
-                        <path fill="#fff" d="M-336.018 71l-8.66 5 8.66 5 8.66-5z"/>
+                        <path fill="#fff" d="M-336.018 71l-8.66 5 8.66 5 8.66-5z" />
                         <path
                             fill="gray"
                             d="M-344.678 76v1l8.66 5 8.66-5v-1l-8.66 5v1-1z"
                         />
-                        <path fill="#fff" d="M-325.626 77l-8.66 5 8.66 5 8.66-5z"/>
+                        <path fill="#fff" d="M-325.626 77l-8.66 5 8.66 5 8.66-5z" />
                         <path
                             fill="gray"
                             d="M-334.286 82v1l8.66 5 8.66-5v-1l-8.66 5v1-1z"
                         />
-                        <path fill="#fff" d="M-315.233 83l-8.66 5 8.66 5 8.66-5z"/>
+                        <path fill="#fff" d="M-315.233 83l-8.66 5 8.66 5 8.66-5z" />
                         <path
                             fill="gray"
                             d="M-323.893 88v1l8.66 5 8.66-5v-1l-8.66 5v1-1z"
                         />
-                        <path fill="#fff" d="M-304.84 89l-8.661 5 8.66 5 8.66-5z"/>
+                        <path fill="#fff" d="M-304.84 89l-8.661 5 8.66 5 8.66-5z" />
                         <path
                             fill="gray"
                             d="M-313.501 94v1l8.66 5 8.66-5v-1l-8.66 5v1-1z"
                         />
-                        <path fill="#fff" d="M-294.449 95l-8.66 5 8.66 5 8.66-5z"/>
+                        <path fill="#fff" d="M-294.449 95l-8.66 5 8.66 5 8.66-5z" />
                         <path
                             fill="gray"
                             d="M-303.109 100v1l8.66 5 8.66-5v-1l-8.66 5v1-1z"
                         />
-                        <path fill="#fff" d="M-284.056 101l-8.66 5 8.66 5 8.66-5z"/>
+                        <path fill="#fff" d="M-284.056 101l-8.66 5 8.66 5 8.66-5z" />
                         <path
                             fill="gray"
                             d="M-292.717 106v1l8.66 5 8.66-5v-1l-8.66 5v1-1z"
                         />
-                        <path fill="#fff" d="M-273.664 107l-8.66 5 8.66 5 8.66-5z"/>
+                        <path fill="#fff" d="M-273.664 107l-8.66 5 8.66 5 8.66-5z" />
                         <path
                             fill="gray"
                             d="M-282.324 112v1l8.66 5 8.66-5v-1l-8.66 5v1-1z"
                         />
-                        <path fill="#fff" d="M-263.272 113l-8.66 5 8.66 5 8.66-5z"/>
+                        <path fill="#fff" d="M-263.272 113l-8.66 5 8.66 5 8.66-5z" />
                         <path
                             fill="gray"
                             d="M-271.932 118v1l8.66 5 8.66-5v-1l-8.66 5v1-1z"
                         />
-                        <path fill="#fff" d="M-252.88 119l-8.66 5 8.66 5 8.66-5z"/>
+                        <path fill="#fff" d="M-252.88 119l-8.66 5 8.66 5 8.66-5z" />
                         <path
                             fill="gray"
                             d="M-261.54 124v1l8.66 5 8.66-5v-1l-8.66 5v1-1z"
@@ -631,192 +631,213 @@ function BannerLogo() {
                             fill="gray"
                             d="M-251.147 130v1l8.66 5 8.66-5v-1l-8.66 5v1-1z"
                         />
-                        <path fill="#fff" d="M-232.095 131l-8.66 5 8.66 5 8.66-5z"/>
+                        <path fill="#fff" d="M-232.095 131l-8.66 5 8.66 5 8.66-5z" />
                         <path
                             fill="gray"
                             d="M-240.755 136v1l8.66 5 8.66-5v-1l-8.66 5v1-1z"
                         />
-                        <path fill="#fff" d="M-356.802 71l-8.66 5 8.66 5 8.66-5z"/>
+                        <path fill="#fff" d="M-356.802 71l-8.66 5 8.66 5 8.66-5z" />
                         <path
                             fill="gray"
                             d="M-365.463 76v1l8.66 5 8.66-5v-1l-8.66 5v1-1z"
                         />
-                        <path fill="#fff" d="M-346.41 77l-8.66 5 8.66 5 8.66-5z"/>
+                        <path fill="#fff" d="M-346.41 77l-8.66 5 8.66 5 8.66-5z" />
                         <path
                             fill="gray"
                             d="M-355.07 82v1l8.66 5 8.66-5v-1l-8.66 5v1-1z"
                         />
-                        <path fill="#fff" d="M-336.018 83l-8.66 5 8.66 5 8.66-5z"/>
-                        <path
+                        { /* letter E key */}
+                        <motion.path fill="#fff" d="M-336.018 83l-8.66 5 8.66 5 8.66-5z"
+                            animate={{ y: [0, 2, 0] }}
+                            transition={{ duration: 0.25, repeat: 1, repeatDelay: 0.75 }}
+                            ease="easeInOut" />
+                        <motion.path
                             fill="gray"
                             d="M-344.678 88v1l8.66 5 8.66-5v-1l-8.66 5v1-1z"
+                            animate={{ y: [0, 2, 0] }}
+                            transition={{ duration: 0.25, repeat: 1, repeatDelay: 0.75 }}
+                            ease="easeInOut"
                         />
-                        <path fill="#fff" d="M-325.626 89l-8.66 5 8.66 5 8.66-5z"/>
+                        <path fill="#fff" d="M-325.626 89l-8.66 5 8.66 5 8.66-5z" />
                         <path
                             fill="gray"
                             d="M-334.286 94v1l8.66 5 8.66-5v-1l-8.66 5v1-1z"
                         />
-                        <path fill="#fff" d="M-315.233 95l-8.66 5 8.66 5 8.66-5z"/>
+                        <path fill="#fff" d="M-315.233 95l-8.66 5 8.66 5 8.66-5z" />
                         <path
                             fill="gray"
                             d="M-323.893 100v1l8.66 5 8.66-5v-1l-8.66 5v1-1z"
                         />
-                        <path fill="#fff" d="M-304.84 101l-8.661 5 8.66 5 8.66-5z"/>
+                        <path fill="#fff" d="M-304.84 101l-8.661 5 8.66 5 8.66-5z" />
                         <path
                             fill="gray"
                             d="M-313.501 106v1l8.66 5 8.66-5v-1l-8.66 5v1-1z"
                         />
-                        <path fill="#fff" d="M-294.449 107l-8.66 5 8.66 5 8.66-5z"/>
+                        <path fill="#fff" d="M-294.449 107l-8.66 5 8.66 5 8.66-5z" />
                         <path
                             fill="gray"
                             d="M-303.109 112v1l8.66 5 8.66-5v-1l-8.66 5v1-1z"
                         />
-                        <path fill="#fff" d="M-284.056 113l-8.66 5 8.66 5 8.66-5z"/>
-                        <path
+                        { /* Letter I key */}
+                        <motion.path fill="#fff" d="M-284.056 113l-8.66 5 8.66 5 8.66-5z"
+                            animate={{ y: [0, 2, 0] }}
+                            transition={{ duration: 0.25, delay: 0.6 }}
+                            ease="easeInOut" />
+                        <motion.path
                             fill="gray"
                             d="M-292.717 118v1l8.66 5 8.66-5v-1l-8.66 5v1-1z"
+                            animate={{ y: [0, 2, 0] }}
+                            transition={{ duration: 0.25, delay: 0.6 }}
+                            ease="easeInOut"
                         />
-                        <path fill="#fff" d="M-273.664 119l-8.66 5 8.66 5 8.66-5z"/>
+                        <path fill="#fff" d="M-273.664 119l-8.66 5 8.66 5 8.66-5z" />
                         <path
                             fill="gray"
                             d="M-282.324 124v1l8.66 5 8.66-5v-1l-8.66 5v1-1z"
                         />
-                        <path fill="#fff" d="M-263.272 125l-8.66 5 8.66 5 8.66-5z"/>
+                        <path fill="#fff" d="M-263.272 125l-8.66 5 8.66 5 8.66-5z" />
                         <path
                             fill="gray"
                             d="M-271.932 130v1l8.66 5 8.66-5v-1l-8.66 5v1-1z"
                         />
-                        <path fill="#fff" d="M-252.88 131l-8.66 5 8.66 5 8.66-5z"/>
+                        <path fill="#fff" d="M-252.88 131l-8.66 5 8.66 5 8.66-5z" />
                         <path
                             fill="gray"
                             d="M-261.54 136v1l8.66 5 8.66-5v-1l-8.66 5v1-1z"
                         />
-                        <path fill="#fff" d="M-242.487 137l-8.66 5 8.66 5 8.66-5z"/>
+                        <path fill="#fff" d="M-242.487 137l-8.66 5 8.66 5 8.66-5z" />
                         <path
                             fill="gray"
                             d="M-251.147 142v1l8.66 5 8.66-5v-1l-8.66 5v1-1z"
                         />
-                        <path fill="#fff" d="M-367.195 77l-8.66 5 8.66 5 8.66-5z"/>
+                        <path fill="#fff" d="M-367.195 77l-8.66 5 8.66 5 8.66-5z" />
                         <path
                             fill="gray"
                             d="M-375.855 82v1l8.66 5 8.66-5v-1l-8.66 5v1-1z"
                         />
-                        <path fill="#fff" d="M-356.802 83l-8.66 5 8.66 5 8.66-5z"/>
+                        <path fill="#fff" d="M-356.802 83l-8.66 5 8.66 5 8.66-5z" />
                         <path
                             fill="gray"
                             d="M-365.463 88v1l8.66 5 8.66-5v-1l-8.66 5v1-1z"
                         />
-                        <path fill="#fff" d="M-346.41 89l-8.66 5 8.66 5 8.66-5z"/>
-                        <path
+                        { /* Letter D key */}
+                        <motion.path fill="#fff" d="M-346.41 89l-8.66 5 8.66 5 8.66-5z"
+                            animate={{ y: [0, 2, 0] }}
+                            transition={{ duration: 0.25, delay: 0.2, repeat: 1 }}
+                            ease="easeInOut" />
+                        <motion.path
                             fill="gray"
                             d="M-355.07 94v1l8.66 5 8.66-5v-1l-8.66 5v1-1z"
+                            animate={{ y: [0, 2, 0] }}
+                            transition={{ duration: 0.25, delay: 0.2, repeat: 1 }}
+                            ease="easeInOut"
                         />
-                        <path fill="#fff" d="M-336.018 95l-8.66 5 8.66 5 8.66-5z"/>
+                        <path fill="#fff" d="M-336.018 95l-8.66 5 8.66 5 8.66-5z" />
                         <path
                             fill="gray"
                             d="M-344.678 100v1l8.66 5 8.66-5v-1l-8.66 5v1-1z"
                         />
-                        <path fill="#fff" d="M-325.626 101l-8.66 5 8.66 5 8.66-5z"/>
+                        <path fill="#fff" d="M-325.626 101l-8.66 5 8.66 5 8.66-5z" />
                         <path
                             fill="gray"
                             d="M-334.286 106v1l8.66 5 8.66-5v-1l-8.66 5v1-1z"
                         />
-                        <path fill="#fff" d="M-315.233 107l-8.66 5 8.66 5 8.66-5z"/>
+                        <path fill="#fff" d="M-315.233 107l-8.66 5 8.66 5 8.66-5z" />
                         <path
                             fill="gray"
                             d="M-323.893 112v1l8.66 5 8.66-5v-1l-8.66 5v1-1z"
                         />
-                        <path fill="#fff" d="M-304.84 113l-8.661 5 8.66 5 8.66-5z"/>
+                        <path fill="#fff" d="M-304.84 113l-8.661 5 8.66 5 8.66-5z" />
                         <path
                             fill="gray"
                             d="M-313.501 118v1l8.66 5 8.66-5v-1l-8.66 5v1-1z"
                         />
-                        <path fill="#fff" d="M-294.449 119l-8.66 5 8.66 5 8.66-5z"/>
+                        <path fill="#fff" d="M-294.449 119l-8.66 5 8.66 5 8.66-5z" />
                         <path
                             fill="gray"
                             d="M-303.109 124v1l8.66 5 8.66-5v-1l-8.66 5v1-1z"
                         />
-                        <path fill="#fff" d="M-284.056 125l-8.66 5 8.66 5 8.66-5z"/>
+                        <path fill="#fff" d="M-284.056 125l-8.66 5 8.66 5 8.66-5z" />
                         <path
                             fill="gray"
                             d="M-292.717 130v1l8.66 5 8.66-5v-1l-8.66 5v1-1z"
                         />
-                        <path fill="#fff" d="M-273.664 131l-8.66 5 8.66 5 8.66-5z"/>
+                        <path fill="#fff" d="M-273.664 131l-8.66 5 8.66 5 8.66-5z" />
                         <path
                             fill="gray"
                             d="M-282.324 136v1l8.66 5 8.66-5v-1l-8.66 5v1-1z"
                         />
-                        <path fill="#fff" d="M-263.272 137l-8.66 5 8.66 5 8.66-5z"/>
+                        <path fill="#fff" d="M-263.272 137l-8.66 5 8.66 5 8.66-5z" />
                         <path
                             fill="gray"
                             d="M-271.932 142v1l8.66 5 8.66-5v-1l-8.66 5v1-1z"
                         />
-                        <path fill="#fff" d="M-252.88 143l-8.66 5 8.66 5 8.66-5z"/>
+                        <path fill="#fff" d="M-252.88 143l-8.66 5 8.66 5 8.66-5z" />
                         <path
                             fill="gray"
                             d="M-261.54 148v1l8.66 5 8.66-5v-1l-8.66 5v1-1z"
                         />
-                        <path fill="#fff" d="M-377.587 83l-8.66 5 8.66 5 8.66-5z"/>
+                        <path fill="#fff" d="M-377.587 83l-8.66 5 8.66 5 8.66-5z" />
                         <path
                             fill="gray"
                             d="M-386.247 88v1l8.66 5 8.66-5v-1l-8.66 5v1-1z"
                         />
-                        <path fill="#fff" d="M-367.195 89l-8.66 5 8.66 5 8.66-5z"/>
+                        <path fill="#fff" d="M-367.195 89l-8.66 5 8.66 5 8.66-5z" />
                         <path
                             fill="gray"
                             d="M-375.855 94v1l8.66 5 8.66-5v-1l-8.66 5v1-1z"
                         />
-                        <path fill="#fff" d="M-356.802 95l-8.66 5 8.66 5 8.66-5z"/>
+                        <path fill="#fff" d="M-356.802 95l-8.66 5 8.66 5 8.66-5z" />
                         <path
                             fill="gray"
                             d="M-365.463 100v1l8.66 5 8.66-5v-1l-8.66 5v1-1z"
                         />
-                        <path fill="#fff" d="M-346.41 101l-8.66 5 8.66 5 8.66-5z"/>
+                        <path fill="#fff" d="M-346.41 101l-8.66 5 8.66 5 8.66-5z" />
                         <path
                             fill="gray"
                             d="M-355.07 106v1l8.66 5 8.66-5v-1l-8.66 5v1-1z"
                         />
-                        <path fill="#fff" d="M-336.018 107l-8.66 5 8.66 5 8.66-5z"/>
+                        <path fill="#fff" d="M-336.018 107l-8.66 5 8.66 5 8.66-5z" />
                         <path
                             fill="gray"
                             d="M-344.678 112v1l8.66 5 8.66-5v-1l-8.66 5v1-1z"
                         />
-                        <path fill="#fff" d="M-325.626 113l-8.66 5 8.66 5 8.66-5z"/>
+                        <path fill="#fff" d="M-325.626 113l-8.66 5 8.66 5 8.66-5z" />
                         <path
                             fill="gray"
                             d="M-334.286 118v1l8.66 5 8.66-5v-1l-8.66 5v1-1z"
                         />
-                        <path fill="#fff" d="M-315.233 119l-8.66 5 8.66 5 8.66-5z"/>
+                        <path fill="#fff" d="M-315.233 119l-8.66 5 8.66 5 8.66-5z" />
                         <path
                             fill="gray"
                             d="M-323.893 124v1l8.66 5 8.66-5v-1l-8.66 5v1-1z"
                         />
-                        <path fill="#fff" d="M-304.84 125l-8.661 5 8.66 5 8.66-5z"/>
+                        <path fill="#fff" d="M-304.84 125l-8.661 5 8.66 5 8.66-5z" />
                         <path
                             fill="gray"
                             d="M-313.501 130v1l8.66 5 8.66-5v-1l-8.66 5v1-1z"
                         />
-                        <path fill="#fff" d="M-294.449 131l-8.66 5 8.66 5 8.66-5z"/>
+                        <path fill="#fff" d="M-294.449 131l-8.66 5 8.66 5 8.66-5z" />
                         <path
                             fill="gray"
                             d="M-303.109 136v1l8.66 5 8.66-5v-1l-8.66 5v1-1z"
                         />
-                        <path fill="#fff" d="M-284.056 137l-8.66 5 8.66 5 8.66-5z"/>
+                        <path fill="#fff" d="M-284.056 137l-8.66 5 8.66 5 8.66-5z" />
                         <path
                             fill="gray"
                             d="M-292.717 142v1l8.66 5 8.66-5v-1l-8.66 5v1-1z"
                         />
-                        <path fill="#fff" d="M-273.664 143l-8.66 5 8.66 5 8.66-5z"/>
+                        <path fill="#fff" d="M-273.664 143l-8.66 5 8.66 5 8.66-5z" />
                         <path
                             fill="gray"
                             d="M-282.324 148v1l8.66 5 8.66-5v-1l-8.66 5v1-1z"
                         />
-                        <path fill="#fff" d="M-263.272 149l-8.66 5 8.66 5 8.66-5z"/>
+                        <path fill="#fff" d="M-263.272 149l-8.66 5 8.66 5 8.66-5z" />
                         <path
                             fill="gray"
                             d="M-271.932 154v1l8.66 5 8.66-5v-1l-8.66 5v1-1z"
                         />
-                        <path fill="#fff" d="M-346.41 113l-8.66 5 40.703 23.5 8.66-5z"/>
+                        <path fill="#fff" d="M-346.41 113l-8.66 5 40.703 23.5 8.66-5z" />
                         <path
                             fill="gray"
                             d="M-355.07 118v1l40.703 23.5 8.66-5v-1l-8.66 5v1-1z"
@@ -832,11 +853,11 @@ function BannerLogo() {
                     strokeWidth="0.265"
                     transform="translate(407.297 54.881)"
                 >
-                    <path d="M-242.487 180l17.32-10 12.99 7.5-17.32 10z"/>
-                    <path d="M-242.487 180v3l12.99 7.5 17.32-10v-3l-17.32 10v3-3z"/>
-                    <path d="M-230.796 173.25l12.99 7.5 5.63-3.25-12.99-7.5z"/>
-                    <path d="M-224.3 177l5.629-3.25z"/>
-                    <path d="M-231.056 173.4l12.99 7.5.174-.1-12.99-7.5z"/>
+                    <path d="M-242.487 180l17.32-10 12.99 7.5-17.32 10z" />
+                    <path d="M-242.487 180v3l12.99 7.5 17.32-10v-3l-17.32 10v3-3z" />
+                    <path d="M-230.796 173.25l12.99 7.5 5.63-3.25-12.99-7.5z" />
+                    <path d="M-224.3 177l5.629-3.25z" />
+                    <path d="M-231.056 173.4l12.99 7.5.174-.1-12.99-7.5z" />
                 </g>
             </svg>
         </>
