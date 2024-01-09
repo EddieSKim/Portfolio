@@ -1,0 +1,21 @@
+.container {
+    width: 90%;
+    border: 1px solid rgb(185, 185, 185);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-grow: 1;
+    flex-basis: auto;
+    padding: 10px;
+    min-height: 80px;
+}
+
+.certName {
+    font-size: 1rem;
+}
+
+.certProvider {
+    font-size: 0.9rem;
+}

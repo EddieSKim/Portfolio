@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { Tabs, Tab, Chip, useMediaQuery } from "@mui/material";
 import { motion, useAnimation, useInView } from 'framer-motion';
 import styles from "./Work.module.css";
+import TechChip from "../techChip/techChip";
 
 const skipTech = [
     "Javascript",
@@ -80,11 +81,7 @@ function Work() {
                                 {
                                     skipTech.map((tech, index) => {
                                         return (
-                                            <Chip
-                                                className={styles.techChip}
-                                                label={tech}
-                                                key={index}
-                                                sx={{ backgroundColor: "#79cdbf" }} />
+                                            <TechChip key={index} props={{tech: tech, backColor: "#79cdbf"}} />
                                         );
                                     })
                                 }

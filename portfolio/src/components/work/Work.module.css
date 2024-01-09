@@ -42,10 +42,6 @@
     margin-bottom: 2vh;
 }
 
-.techChip {
-    margin: 2px;
-}
-
 @media screen and (max-width: 920px) {
     .workSection {
         min-height: 100vh;

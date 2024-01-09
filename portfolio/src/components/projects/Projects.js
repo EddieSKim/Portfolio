@@ -17,6 +17,7 @@ import FolderIcon from '@mui/icons-material/Folder';
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import styles from "./projects.module.css";
 import { motion, useAnimation, useInView } from 'framer-motion';
+import TechChip from "../techChip/techChip";
 
 const motivTech = [
     "TypeScript",
@@ -27,6 +28,8 @@ const motivTech = [
     "Vercel",
     "HTML",
     "CSS",
+    "Python",
+    "AWS",
 ]
 
 const portfolioV2Tech = [
@@ -186,11 +189,7 @@ function Projects() {
                                         {
                                             weatherAppTech.map((tech, index) => {
                                                 return (
-                                                    <Chip
-                                                        sx={{ backgroundColor: "#f5f5dc" }}
-                                                        className={styles.techChip}
-                                                        label={tech}
-                                                        key={index} />
+                                                    <TechChip key={index} props={{tech: tech, backColor: "#f5f5dc"}} />
                                                 );
                                             })
                                         }
@@ -240,11 +239,7 @@ function Projects() {
                                         {
                                             portfolioV2Tech.map((tech, index) => {
                                                 return (
-                                                    <Chip
-                                                        sx={{ backgroundColor: "#f5f5dc" }}
-                                                        className={styles.techChip}
-                                                        label={tech}
-                                                        key={index} />
+                                                    <TechChip key={index} props={{tech: tech, backColor: "#f5f5dc"}} />
                                                 );
                                             })
                                         }
@@ -293,11 +288,7 @@ function Projects() {
                                         {
                                             motivTech.map((tech, index) => {
                                                 return (
-                                                    <Chip
-                                                        className={styles.techChip}
-                                                        label={tech}
-                                                        key={index}
-                                                        sx={{ backgroundColor: "#f5f5dc" }} />
+                                                    <TechChip key={index} props={{tech: tech, backColor: "#f5f5dc"}}/>
                                                 );
                                             })
                                         }
@@ -346,11 +337,7 @@ function Projects() {
                                         {
                                             portfolioV1Tech.map((tech, index) => {
                                                 return (
-                                                    <Chip
-                                                        className={styles.techChip}
-                                                        label={tech}
-                                                        key={index}
-                                                        sx={{ backgroundColor: "#f5f5dc" }} />
+                                                    <TechChip key={index} props={{tech: tech, backColor: "#f5f5dc"}}/>
                                                 );
                                             })
                                         }
