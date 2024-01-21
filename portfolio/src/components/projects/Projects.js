@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from "react";
 import {
     Tabs,
     Tab,
-    Chip,
     IconButton,
     Tooltip,
 } from "@mui/material";
@@ -18,6 +17,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import styles from "./projects.module.css";
 import { motion, useAnimation, useInView } from 'framer-motion';
 import TechChip from "../techChip/techChip";
+import ScreenshotMonitorIcon from '@mui/icons-material/ScreenshotMonitor';
 
 const motivTech = [
     "TypeScript",
@@ -154,19 +154,20 @@ function Projects() {
                                 alt="portfolioBanner"
                                 effect="blur" />
                             <h2 className={styles.projectTitle}>
-                                <a
-                                    style={{ textDecoration: "none" }}
-                                    href="https://weather-app-eddie.vercel.app/"
-                                    target="./">
-                                    Weather App
-                                </a>
+                                Weather App
                             </h2>
                             <span>Dec 2023 |
-                                <Tooltip title="Source Code" placement="right">
+                                <Tooltip title="Source Code" placement="bottom">
                                     <IconButton
                                         href="https://github.com/EddieSKim/WeatherApp/tree/main/weatherapp"
                                         target="./"
                                         children={<FolderIcon />} />
+                                </Tooltip>
+                                <Tooltip title="To Website" placement="bottom">
+                                    <IconButton
+                                        href="https://weather-app-eddie.vercel.app/"
+                                        target="./"
+                                        children={<ScreenshotMonitorIcon />} />
                                 </Tooltip>
                             </span>
                             <div className={styles.projectContent}>
@@ -189,7 +190,7 @@ function Projects() {
                                         {
                                             weatherAppTech.map((tech, index) => {
                                                 return (
-                                                    <TechChip key={index} props={{tech: tech, backColor: "#f5f5dc"}} />
+                                                    <TechChip key={index} props={{ tech: tech, backColor: "#f5f5dc" }} />
                                                 );
                                             })
                                         }
@@ -207,21 +208,21 @@ function Projects() {
                                 placeholderSrc={portfolioBannerLowres}
                                 alt="portfolioBanner"
                                 effect="blur" />
-                            <h2
-                                className={styles.projectTitle}>
-                                <a
-                                    style={{ textDecoration: "none" }}
-                                    href="https://eddiekim.vercel.app/"
-                                    target="./">
-                                    Portfolio V2
-                                </a>
+                            <h2 className={styles.projectTitle}>
+                                Portfolio V2
                             </h2>
                             <span>May 2023 |
-                                <Tooltip title="Source Code" placement="right">
+                                <Tooltip title="Source Code" placement="bottom">
                                     <IconButton
                                         href="https://github.com/EddieSKim/Portfolio"
                                         target="./"
                                         children={<FolderIcon />} />
+                                </Tooltip>
+                                <Tooltip title="To Website" placement="bottom">
+                                    <IconButton
+                                        href="https://eddiekim.vercel.app/"
+                                        target="./"
+                                        children={<ScreenshotMonitorIcon />} />
                                 </Tooltip>
                             </span>
                             <div className={styles.projectContent}>
@@ -239,7 +240,7 @@ function Projects() {
                                         {
                                             portfolioV2Tech.map((tech, index) => {
                                                 return (
-                                                    <TechChip key={index} props={{tech: tech, backColor: "#f5f5dc"}} />
+                                                    <TechChip key={index} props={{ tech: tech, backColor: "#f5f5dc" }} />
                                                 );
                                             })
                                         }
@@ -258,19 +259,20 @@ function Projects() {
                                 alt="motiv-home"
                                 effect="blur" />
                             <h2 className={styles.projectTitle}>
-                                <a
-                                    style={{ textDecoration: "none" }}
-                                    href="https://motiv-optimize.vercel.app/"
-                                    target="./">
-                                    Motiv-Optimize
-                                </a>
+                                Motiv-Optimize
                             </h2>
                             <span>Sept 2022 - Apr 2023 |
-                                <Tooltip title="Poster" placement="right">
+                                <Tooltip title="Poster" placement="bottom">
                                     <IconButton
                                         href="https://schulich.ucalgary.ca/sites/default/files/teams/4/52099-Motiv%20Optimize%20ENG%2024%20Booth%2036.pdf"
                                         target="./"
                                         children={<FolderIcon />} />
+                                </Tooltip>
+                                <Tooltip title="Demo Website" placement="bottom" >
+                                    <IconButton
+                                        href="https://motiv-optimize.vercel.app/"
+                                        target="./"
+                                        children={<ScreenshotMonitorIcon />} />
                                 </Tooltip>
                             </span>
                             <div className={styles.projectContent}>
@@ -288,7 +290,7 @@ function Projects() {
                                         {
                                             motivTech.map((tech, index) => {
                                                 return (
-                                                    <TechChip key={index} props={{tech: tech, backColor: "#f5f5dc"}}/>
+                                                    <TechChip key={index} props={{ tech: tech, backColor: "#f5f5dc" }} />
                                                 );
                                             })
                                         }
@@ -307,19 +309,20 @@ function Projects() {
                                 alt="portfoliov1"
                                 effect="blur" />
                             <h2 className={styles.projectTitle}>
-                                <a
-                                    style={{ textDecoration: "none" }}
-                                    href="https://eddieskim.github.io/html/index.html"
-                                    target="./">
-                                    Portfolio V1
-                                </a>
+                                Portfolio V1
                             </h2>
                             <span>July 2021 |
-                                <Tooltip title="Source Code" placement="right">
+                                <Tooltip title="Source Code" placement="bottom">
                                     <IconButton
                                         href="https://github.com/EddieSKim/EddieSKim.github.io"
                                         target="./"
                                         children={<FolderIcon />} />
+                                </Tooltip>
+                                <Tooltip title="To Website" placement="bottom">
+                                    <IconButton
+                                        href="https://eddieskim.github.io/html/index.html"
+                                        target="./"
+                                        children={<ScreenshotMonitorIcon />} />
                                 </Tooltip>
                             </span>
                             <div className={styles.projectContent}>
@@ -337,7 +340,7 @@ function Projects() {
                                         {
                                             portfolioV1Tech.map((tech, index) => {
                                                 return (
-                                                    <TechChip key={index} props={{tech: tech, backColor: "#f5f5dc"}}/>
+                                                    <TechChip key={index} props={{ tech: tech, backColor: "#f5f5dc" }} />
                                                 );
                                             })
                                         }
