@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import { Tabs, Tab, Chip, useMediaQuery } from "@mui/material";
+import { Tabs, Tab, useMediaQuery } from "@mui/material";
 import { motion, useAnimation, useInView } from 'framer-motion';
 import styles from "./Work.module.css";
 import TechChip from "../techChip/techChip";
@@ -77,6 +77,7 @@ function Work() {
                                     Replaced the pre-existing payment api to the new payment solution api and sped up loading time by seconds
                                 </li>
                             </ul>
+                            <h4>Competencies</h4>
                             <div className={styles.techCtn}>
                                 {
                                     skipTech.map((tech, index) => {

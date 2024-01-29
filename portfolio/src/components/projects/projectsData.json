@@ -1,0 +1,124 @@
+{
+    "projectTitles": [
+        "Weather App",
+        "Portfolio V2",
+        "Motiv-Optimize",
+        "Portfolio V1"
+    ],
+    "projectsInfo": [
+        {
+            "title": "Weather App",
+            "projectDate": "Dec 2023",
+            "imageLink": {
+                "highRes": "images/projectImages/weatherApp/weatherAppMainLight.png",
+                "lowRes": ""
+            },
+            "descriptions": [
+                "Weather app was created to provide users with accurate information about current weather conditions and forecasts for specified location",
+                "It offers features such as city search bar with suggestions, current temperature, humidity, hourly forecast, weekly forecast, light/dark theme switch and more",
+                "Used open weather map api and maptiler api for location searching and location weather"
+            ],
+            "links": {
+                "repoLink": "https://github.com/EddieSKim/WeatherApp/tree/main/weatherapp",
+                "externalLink": "https://weather-app-eddie.vercel.app/"
+            },
+            "toolTip": {
+                "repoToolTip": "Source Code",
+                "externalToolTip": "To Website"
+            },
+            "tech": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Material-UI",
+                "React",
+                "Vercel"
+            ]
+        },
+        {
+            "title": "Portfolio V2",
+            "projectDate": "May 2023",
+            "imageLink": {
+                "highRes": "images/projectImages/portfolio/banner.png",
+                "lowRes": "images/projectImages/portfolio/banner-lowres.png"
+            },
+            "descriptions": [
+                "The objective of this project was to create a place to organize and showcase my work experiences and projects",
+                "This page will continue to grow as I develop more projects and gain more experience"
+            ],
+            "links": {
+                "repoLink": "https://github.com/EddieSKim/Portfolio",
+                "externalLink": "https://eddiekim.vercel.app/"
+            },
+            "toolTip": {
+                "repoToolTip": "Source Code",
+                "externalToolTip": "To Website"
+            },
+            "tech": [
+                "JavaScript",
+                "HTML",
+                "CSS",
+                "React",
+                "Material-UI",
+                "Vercel"
+            ]
+        },
+        {
+            "title": "Motiv-Optimize",
+            "projectDate": "Sept 2022 - Apr 2023",
+            "imageLink": {
+                "highRes": "images/projectImages/motivOptimize/motiv-home.png",
+                "lowRes": "images/projectImages/motivOptimize/motiv-home-lowres.png"
+            },
+            "descriptions": [
+                "Collaborated with a team and industry sponsor, Motiv Digital, to develop an application that helps marketing teams create efficient campaigns and websites by leveraging the power of Multi Armed Bandit algorithm",
+                "Placed 2nd at the Schulich School of Engineering design fair in the software category"
+            ],
+            "links": {
+                "repoLink": "https://schulich.ucalgary.ca/sites/default/files/teams/4/52099-Motiv%20Optimize%20ENG%2024%20Booth%2036.pdf",
+                "externalLink": "https://motiv-optimize.vercel.app/"
+            },
+            "toolTip": {
+                "repoToolTip": "Poster",
+                "externalToolTip": "Demo Website"
+            },
+            "tech": [
+                "TypeScript",
+                "JavaScript",
+                "Material-UI",
+                "NextJs",
+                "Chart.js",
+                "Vercel",
+                "HTML",
+                "CSS",
+                "Python",
+                "AWS"
+            ]
+        },
+        {
+            "title": "Portfolio V1",
+            "projectDate": "July 2021",
+            "imageLink": {
+                "highRes": "images/projectImages/portfoliov1/portfoliov1.png",
+                "lowRes": "images/projectImages/portfoliov1/portfoliov1-lowres.png"
+            },
+            "descriptions": [
+                "Created a simple web application to learn the basics of HTML and CSS",
+                "It includes a home page, academic projects page, personal projects page and a list on contacts"
+            ],
+            "links": {
+                "repoLink": "https://github.com/EddieSKim/EddieSKim.github.io",
+                "externalLink": "https://eddieskim.github.io/html/index.html"
+            },
+            "toolTip": {
+                "repoToolTip": "Source Code",
+                "externalToolTip": "To Website"
+            },
+            "tech": [
+                "JQuery",
+                "HTML",
+                "CSS"
+            ]
+        }
+    ]
+}
