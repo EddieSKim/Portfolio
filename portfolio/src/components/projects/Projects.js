@@ -3,15 +3,16 @@ import {
     Tabs,
     Tab,
     IconButton,
-    Tooltip,
+    Tooltip, Paper
 } from "@mui/material";
 import FolderIcon from '@mui/icons-material/Folder';
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import styles from "./projects.module.css";
 import { motion, useAnimation, useInView } from 'framer-motion';
 import TechChip from "../techChip/techChip";
 import ScreenshotMonitorIcon from '@mui/icons-material/ScreenshotMonitor';
 import projectsData from './projectsData.json';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
 
 function CustomTabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -26,12 +27,29 @@ function CustomTabPanel(props) {
                 value === index && (
                     <div className={styles.projectInfo}>
                         {
-                            children && children.imageLink && (
-                                <img
-                                    className={styles.projectImg}
-                                    loading="lazy"
-                                    src={children.imageLink.highRes}
-                                    alt="project-img" />
+                            children && (
+                                <Carousel
+                                    className={styles.carouselContainer}
+                                    interval={3500}
+                                    emulateTouch
+                                    infiniteLoop
+                                    autoPlay
+                                    showThumbs={false}
+                                    dynamicHeight
+                                    swipeable>
+                                    {
+                                        children.imageLink.map((item, i) => {
+                                            return (
+                                                <img
+                                                    key={index}
+                                                    className={styles.projectImg}
+
+                                                    src={item.highRes}
+                                                    alt="project-img" />
+                                            )
+                                        })
+                                    }
+                                </Carousel>
                             )
                         }
                         <h2 className={styles.projectTitle}>

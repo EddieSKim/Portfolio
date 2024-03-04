@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { Chip, Grid } from "@mui/material";
+import { Grid } from "@mui/material";
 import styles from "./About.module.css";
 import { motion, useAnimation, useInView } from 'framer-motion';
 import Certificates from "./certification";

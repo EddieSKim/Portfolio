@@ -9,10 +9,16 @@
         {
             "title": "Weather App",
             "projectDate": "Dec 2023",
-            "imageLink": {
-                "highRes": "images/projectImages/weatherApp/weatherAppMainLight.png",
-                "lowRes": ""
-            },
+            "imageLink": [
+                {
+                    "highRes": "images/projectImages/weatherApp/weatherAppMainLight.png",
+                    "lowRes": ""
+                },
+                {
+                    "highRes": "images/projectImages/weatherApp/weatherAppMain.png",
+                    "lowRes": ""
+                }
+            ],
             "descriptions": [
                 "Weather app was created to provide users with accurate information about current weather conditions and forecasts for specified location",
                 "It offers features such as city search bar with suggestions, current temperature, humidity, hourly forecast, weekly forecast, light/dark theme switch and more",
@@ -38,10 +44,16 @@
         {
             "title": "Portfolio V2",
             "projectDate": "May 2023",
-            "imageLink": {
-                "highRes": "images/projectImages/portfolio/banner.png",
-                "lowRes": "images/projectImages/portfolio/banner-lowres.png"
-            },
+            "imageLink": [
+                {
+                    "highRes": "images/projectImages/portfolio/banner-highRes.png",
+                    "lowRes": "images/projectImages/portfolio/banner-lowres.png"
+                },
+                {
+                    "highRes": "images/projectImages/portfolio/about-highRes.png",
+                    "lowRes": ""
+                }
+            ],
             "descriptions": [
                 "The objective of this project was to create a place to organize and showcase my work experiences and projects",
                 "This page will continue to grow as I develop more projects and gain more experience"
@@ -66,10 +78,24 @@
         {
             "title": "Motiv-Optimize",
             "projectDate": "Sept 2022 - Apr 2023",
-            "imageLink": {
-                "highRes": "images/projectImages/motivOptimize/motiv-home.png",
-                "lowRes": "images/projectImages/motivOptimize/motiv-home-lowres.png"
-            },
+            "imageLink": [
+                {
+                    "highRes": "images/projectImages/motivOptimize/motiv-home.png",
+                    "lowRes": "images/projectImages/motivOptimize/motiv-home-lowres.png"
+                },
+                {
+                    "highRes": "images/projectImages/motivOptimize/motiv-screen.png",
+                    "lowRes": ""
+                },
+                {
+                    "highRes": "images/projectImages/motivOptimize/motiv-dashboard.png",
+                    "lowRes": ""
+                },
+                {
+                    "highRes": "images/projectImages/motivOptimize/motiv-newCampaign.png",
+                    "lowRes": ""
+                }
+            ],
             "descriptions": [
                 "Collaborated with a team and industry sponsor, Motiv Digital, to develop an application that helps marketing teams create efficient campaigns and websites by leveraging the power of Multi Armed Bandit algorithm",
                 "Placed 2nd at the Schulich School of Engineering design fair in the software category"
@@ -98,10 +124,12 @@
         {
             "title": "Portfolio V1",
             "projectDate": "July 2021",
-            "imageLink": {
-                "highRes": "images/projectImages/portfoliov1/portfoliov1.png",
-                "lowRes": "images/projectImages/portfoliov1/portfoliov1-lowres.png"
-            },
+            "imageLink": [
+                {
+                    "highRes": "images/projectImages/portfoliov1/portfoliov1.png",
+                    "lowRes": "images/projectImages/portfoliov1/portfoliov1-lowres.png"
+                }
+            ],
             "descriptions": [
                 "Created a simple web application to learn the basics of HTML and CSS",
                 "It includes a home page, academic projects page, personal projects page and a list on contacts"
