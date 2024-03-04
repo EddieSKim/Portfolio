@@ -30,6 +30,7 @@ function CustomTabPanel(props) {
                             children && (
                                 <Carousel
                                     className={styles.carouselContainer}
+                                    showStatus={false}
                                     interval={3500}
                                     emulateTouch
                                     infiniteLoop
