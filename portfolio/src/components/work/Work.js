@@ -63,6 +63,7 @@ function Work() {
                     orientation={smallMediaScreen ? "horizontal" : "vertical"}
                     value={tabValue}
                     onChange={handleTabChange}>
+                    <Tab label={<span style={{ color: "#79cdbf", fontFamily: "Nunito, sans serif" }}>Traction Rec</span>} />
                     <Tab label={<span style={{ color: "#79cdbf", fontFamily: "Nunito, sans serif" }}>SkipTheDishes</span>} />
                 </Tabs>
                 {tabValue === 1 && <>
