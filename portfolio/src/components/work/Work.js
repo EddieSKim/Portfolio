@@ -13,6 +13,10 @@ const skipTech = [
     "React",
 ]
 
+const tRecTech = [
+
+]
+
 function Work() {
     const [tabValue, setTabValue] = useState(0);
     const smallMediaScreen = useMediaQuery("(max-width: 500px");
@@ -61,7 +65,7 @@ function Work() {
                     onChange={handleTabChange}>
                     <Tab label={<span style={{ color: "#79cdbf", fontFamily: "Nunito, sans serif" }}>SkipTheDishes</span>} />
                 </Tabs>
-                {tabValue === 0 && <>
+                {tabValue === 1 && <>
                     <div className={styles.experienceCtn}>
                         <h3 className={styles.experienceTitle}>Software Engineer Co-op | SkipTheDishes</h3>
                         <span className={styles.experienceInfo}>August 2021 - August 2022</span>
@@ -81,6 +85,26 @@ function Work() {
                             <div className={styles.techCtn}>
                                 {
                                     skipTech.map((tech, index) => {
+                                        return (
+                                            <TechChip key={index} props={{tech: tech, backColor: "#79cdbf"}} />
+                                        );
+                                    })
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </>}
+                {tabValue === 0 && <>
+                    <div className={styles.experienceCtn}>
+                        <h3 className={styles.experienceTitle}>Junior Product Developer | Traction Rec</h3>
+                        <span className={styles.experienceInfo}>April 2024 - Current</span>
+                        <div className={styles.experienceInfo}>
+                            <ul>
+                            </ul>
+                            <h4>Competencies</h4>
+                            <div className={styles.techCtn}>
+                                {
+                                    tRecTech.map((tech, index) => {
                                         return (
                                             <TechChip key={index} props={{tech: tech, backColor: "#79cdbf"}} />
                                         );
