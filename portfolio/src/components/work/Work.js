@@ -98,9 +98,27 @@ function Work() {
                 {tabValue === 0 && <>
                     <div className={styles.experienceCtn}>
                         <h3 className={styles.experienceTitle}>Junior Product Developer | Traction Rec</h3>
-                        <span className={styles.experienceInfo}>April 2024 - Current</span>
+                        <span className={styles.experienceInfo}>April 2024 - July 2025</span>
                         <div className={styles.experienceInfo}>
                             <ul>
+                                <li>
+                                    Contributed to the design and development of a new Payment App, replacing the legacy version used by 10+ customer orgs
+                                </li>
+                                <li>
+                                    Developed 3+ core features within the Payment App using Apex, LWC, and SOQL, collaborating with cross functional teams for integration and release
+                                </li>
+                                <li>
+                                    Spearheaded the Account Credits and Default Payment Method features tailored to customer day to day workflows
+                                </li>
+                                <li>
+                                    Provided ongoing customer support, including debugging and root cause analysis on customer-specific product issues
+                                </li>
+                                <li>
+                                    Contributed to a company-wide support effort, helping reduce open customer cases from 180+ to under 150 by investigating and resolving product issues and concerns
+                                </li>
+                                <li>
+                                    Built and released 2 enhancements to an internal developer tool during R&D days, improving usability for the development team
+                                </li>
                             </ul>
                             <h4>Competencies</h4>
                             <div className={styles.techCtn}>
