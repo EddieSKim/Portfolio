@@ -79,7 +79,7 @@ function Work() {
                         <span className={styles.experienceInfo}>April 2024 - July 2025</span>
                         <div className={styles.experienceDescription}>
                             At Traction Rec, I worked on building a brand new feature on the company product, Payment App, used by 10+ organizations, replacing a legacy version.
-                            I developed core features using Apex, Lightning Web Components (LWC), and SOQL, collaborating closely with designers, QA, and stakeholders to ship production-ready code.
+                            I developed core features using Apex, Lightning Web Components (LWC), and SOQL, collaborating closely with designers, QA, and stakeholders to ship production ready code.
                         </div>
                         <div>Highlights Include:</div>
                         <div className={styles.experienceInfo}>
@@ -88,10 +88,10 @@ function Work() {
                                     Spearheading the Account Credits and Default Payment Method features to align with customer workflows
                                 </li>
                                 <li>
-                                    Helping reduce open support cases from 180+ to under 150 as part of a company-wide quality initiative
+                                    Helping reduce open support cases from 180+ to under 150 as part of a company wide quality initiative
                                 </li>
                                 <li>
-                                    Debugging and resolving customer-specific issues to improve overall product reliability and trust
+                                    Debugging and resolving customer specific issues to improve overall product reliability and trust
                                 </li>
                                 <li>
                                     During internal R&D days, I built and released two enhancements to an internal developer tool that improved usability for our dev team
