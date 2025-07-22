@@ -5,8 +5,8 @@ import styles from "./Work.module.css";
 import TechChip from "../techChip/techChip";
 
 const skipTech = [
-    "Javascript",
-    "Typescript",
+    "JavaScript",
+    "TypeScript",
     "Java",
     "HTML",
     "CSS",
@@ -14,7 +14,14 @@ const skipTech = [
 ]
 
 const tRecTech = [
-
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "Apex",
+    "Lightning Web Component",
+    "Salesforce",
+    "SOQL",
+    "Jira"
 ]
 
 function Work() {
