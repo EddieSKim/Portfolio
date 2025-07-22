@@ -16,8 +16,11 @@ const skills = [
     "Java",
     "C++",
     "MySQL",
-    "Node.js",
-    "Express"
+    "SOQL",
+    "Apex",
+    "Lightning Web Component",
+    "Salesforce"
+
 ]
 
 const certificateList = [
