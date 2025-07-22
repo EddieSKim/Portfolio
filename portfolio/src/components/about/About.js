@@ -85,11 +85,11 @@ function About() {
                         Hi, I’m Eddie Kim, a curious and driven software developer with a passion for building practical solutions that make life easier for users and teams alike.
                     </p>
                     <p>
-                        I recently worked as a Junior Product Developer at Traction Rec, where I contributed to the development of a new Salesforce-based Payment App used by 10+ organizations. 
-                        From designing core features in Apex, Lightning Web Components, and SOQL to debugging customer-specific issues, I thrive in full-stack environments where problem-solving and clean code come together.
+                        I recently worked as a Junior Product Developer at Traction Rec, where I contributed to the development of a new Salesforce based Payment App used by 10+ organizations. 
+                        From designing core features in Apex, Lightning Web Components, and SOQL to debugging customer specific issues, I thrive in full stack environments where problem solving and clean code come together.
                     </p>
                     <p>
-                        Before that, I interned at SkipTheDishes, where I gained hands-on experience working with React, improving internal tools, and testing mission-critical systems.
+                        Before that, I interned at SkipTheDishes, where I gained hands on experience working with React, improving internal tools, and testing mission critical systems.
                     </p>
                     <p>
                         If you're seeking a motivated and versatile software developer, let's connect! I'm excited to explore how my skills and passion align with
