@@ -82,25 +82,20 @@ function About() {
                 transition={{ duration: 0.75, delay: 0.25 }}>
                 <div className={styles.bodyText}>
                     <p>
-                        Hello there! I'm Eddie, software engineering graduate
-                        passionate about crafting innovative solutions and making a meaningful impact through technology.
+                        Hi, I’m Eddie Kim, a curious and driven software developer with a passion for building practical solutions that make life easier for users and teams alike.
                     </p>
                     <p>
-                        As I embark on this exciting phase of transitioning from academia to industry, I'm eager to channel my
-                        enthusiasm, adaptability, and hunger for learning into professional settings. I am committed to continuous
-                        growth, eagerly embracing opportunities to expand my skill set and stay abreast of the latest industry trends
-                        and technologies.
+                        I recently worked as a Junior Product Developer at Traction Rec, where I contributed to the development of a new Salesforce-based Payment App used by 10+ organizations. 
+                        From designing core features in Apex, Lightning Web Components, and SOQL to debugging customer-specific issues, I thrive in full-stack environments where problem-solving and clean code come together.
                     </p>
                     <p>
-                        I thrive on challenges and am excited about the prospect of contributing my creativity and dedication to
-                        projects that push boundaries and solve real-world problems.
+                        Before that, I interned at SkipTheDishes, where I gained hands-on experience working with React, improving internal tools, and testing mission-critical systems.
                     </p>
                     <p>
-                        If you're seeking a motivated and versatile software engineering graduate ready to embark on a journey of
-                        learning and contribution, let's connect! I'm excited to explore how my skills and passion align with
+                        If you're seeking a motivated and versatile software developer, let's connect! I'm excited to explore how my skills and passion align with
                         opportunities in the world of technology.
                     </p>
-                    <h4 className={styles.skillsTitle}>Technologies I'm familar with:</h4>
+                    <h4 className={styles.skillsTitle}>Technologies I'm familiar with:</h4>
                     <div className={styles.skillsWrapper}>
                         {
                             skills.map((skill, index) => {

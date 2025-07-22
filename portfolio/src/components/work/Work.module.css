@@ -42,6 +42,11 @@
     margin-bottom: 2vh;
 }
 
+.experienceDescription {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
 @media screen and (max-width: 920px) {
     .workSection {
         min-height: 100vh;

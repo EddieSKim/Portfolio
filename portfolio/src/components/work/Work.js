@@ -73,10 +73,51 @@ function Work() {
                     <Tab label={<span style={{ color: "#79cdbf", fontFamily: "Nunito, sans serif" }}>Traction Rec</span>} />
                     <Tab label={<span style={{ color: "#79cdbf", fontFamily: "Nunito, sans serif" }}>SkipTheDishes</span>} />
                 </Tabs>
+                {tabValue === 0 && <>
+                    <div className={styles.experienceCtn}>
+                        <h3 className={styles.experienceTitle}>Junior Product Developer | Traction Rec</h3>
+                        <span className={styles.experienceInfo}>April 2024 - July 2025</span>
+                        <div className={styles.experienceDescription}>
+                            At Traction Rec, I worked on building a brand new feature on the company product, Payment App, used by 10+ organizations, replacing a legacy version.
+                            I developed core features using Apex, Lightning Web Components (LWC), and SOQL, collaborating closely with designers, QA, and stakeholders to ship production-ready code.
+                        </div>
+                        <div>Highlights Include:</div>
+                        <div className={styles.experienceInfo}>
+                            <ul>
+                                <li>
+                                    Spearheading the Account Credits and Default Payment Method features to align with customer workflows
+                                </li>
+                                <li>
+                                    Helping reduce open support cases from 180+ to under 150 as part of a company-wide quality initiative
+                                </li>
+                                <li>
+                                    Debugging and resolving customer-specific issues to improve overall product reliability and trust
+                                </li>
+                                <li>
+                                    During internal R&D days, I built and released two enhancements to an internal developer tool that improved usability for our dev team
+                                </li>
+                            </ul>
+                            <h4>Competencies</h4>
+                            <div className={styles.techCtn}>
+                                {
+                                    tRecTech.map((tech, index) => {
+                                        return (
+                                            <TechChip key={index} props={{tech: tech, backColor: "#79cdbf"}} />
+                                        );
+                                    })
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </>}
                 {tabValue === 1 && <>
                     <div className={styles.experienceCtn}>
                         <h3 className={styles.experienceTitle}>Software Engineer Co-op | SkipTheDishes</h3>
                         <span className={styles.experienceInfo}>August 2021 - August 2022</span>
+                        <div className={styles.experienceDescription}>
+                            At SkipTheDishes, I worked on maintaining and improving the Courier Portal, enhancing the user experience for the couriers using the application.  
+                        </div>
+                        <div>Highlights Include:</div>
                         <div className={styles.experienceInfo}>
                             <ul>
                                 <li>
@@ -93,44 +134,6 @@ function Work() {
                             <div className={styles.techCtn}>
                                 {
                                     skipTech.map((tech, index) => {
-                                        return (
-                                            <TechChip key={index} props={{tech: tech, backColor: "#79cdbf"}} />
-                                        );
-                                    })
-                                }
-                            </div>
-                        </div>
-                    </div>
-                </>}
-                {tabValue === 0 && <>
-                    <div className={styles.experienceCtn}>
-                        <h3 className={styles.experienceTitle}>Junior Product Developer | Traction Rec</h3>
-                        <span className={styles.experienceInfo}>April 2024 - July 2025</span>
-                        <div className={styles.experienceInfo}>
-                            <ul>
-                                <li>
-                                    Contributed to the design and development of a new Payment App, replacing the legacy version used by 10+ customer orgs
-                                </li>
-                                <li>
-                                    Developed 3+ core features within the Payment App using Apex, LWC, and SOQL, collaborating with cross functional teams for integration and release
-                                </li>
-                                <li>
-                                    Spearheaded the Account Credits and Default Payment Method features tailored to customer day to day workflows
-                                </li>
-                                <li>
-                                    Provided ongoing customer support, including debugging and root cause analysis on customer-specific product issues
-                                </li>
-                                <li>
-                                    Contributed to a company-wide support effort, helping reduce open customer cases from 180+ to under 150 by investigating and resolving product issues and concerns
-                                </li>
-                                <li>
-                                    Built and released 2 enhancements to an internal developer tool during R&D days, improving usability for the development team
-                                </li>
-                            </ul>
-                            <h4>Competencies</h4>
-                            <div className={styles.techCtn}>
-                                {
-                                    tRecTech.map((tech, index) => {
                                         return (
                                             <TechChip key={index} props={{tech: tech, backColor: "#79cdbf"}} />
                                         );
