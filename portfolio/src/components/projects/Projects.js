@@ -3,7 +3,7 @@ import {
     Tabs,
     Tab,
     IconButton,
-    Tooltip, Paper
+    Tooltip
 } from "@mui/material";
 import FolderIcon from '@mui/icons-material/Folder';
 import styles from "./projects.module.css";

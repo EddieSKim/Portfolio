@@ -3,7 +3,8 @@
         "Weather App",
         "Portfolio V2",
         "Motiv-Optimize",
-        "Portfolio V1"
+        "Portfolio V1",
+        "Word of the Day App"
     ],
     "projectsInfo": [
         {
@@ -30,7 +31,7 @@
             },
             "toolTip": {
                 "repoToolTip": "Source Code",
-                "externalToolTip": "To Website"
+                "externalToolTip": "Demo"
             },
             "tech": [
                 "HTML",
@@ -106,7 +107,7 @@
             },
             "toolTip": {
                 "repoToolTip": "Poster",
-                "externalToolTip": "Demo Website"
+                "externalToolTip": "Demo"
             },
             "tech": [
                 "TypeScript",
@@ -144,6 +145,32 @@
             },
             "tech": [
                 "JQuery",
+                "HTML",
+                "CSS"
+            ]
+        },
+        {
+            "title": "Word of the Day App",
+            "projectDate": "Work In-Progress",
+            "imageLink": [
+                {
+                    "highRes": "images/projectImages/projectUnderConstruction.png",
+                    "lowRes": ""
+                }
+            ],
+            "descriptions": [
+                "A mobile application to help users learn a new word every day, track progress, and practice with quizzes powered by LLMs",
+                "Will make updates as the project progresses"
+            ],
+            "links": {
+            },
+            "toolTip": {
+                "repoToolTip": "In-Progress",
+                "externalToolTip": "In-Progress"
+            },
+            "tech": [
+                "React Native (Expo)",
+                "JavaScript",
                 "HTML",
                 "CSS"
             ]
