@@ -117,7 +117,7 @@ function Projects() {
         if (isInView) {
             mainControls.start("visible");
         }
-    }, [isInView])
+    }, [isInView, mainControls])
 
     const handleTabChange = (event, value) => {
         setTabValue(value);

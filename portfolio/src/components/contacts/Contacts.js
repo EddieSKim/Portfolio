@@ -16,7 +16,7 @@ function Contacts() {
         if (isInView) {
             mainControls.start("visible");
         }
-    }, [isInView])
+    }, [isInView, mainControls])
 
     return (
         <div className={styles.contactSection} id="contacts">

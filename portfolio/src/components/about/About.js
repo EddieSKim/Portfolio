@@ -55,7 +55,7 @@ function About() {
         if (isInView) {
             mainControls.start("visible");
         }
-    }, [isInView])
+    }, [isInView, mainControls])
 
     return (
         <div className={styles.aboutSection} id="about">
