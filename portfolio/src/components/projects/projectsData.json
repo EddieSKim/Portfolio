@@ -170,9 +170,10 @@
             },
             "tech": [
                 "React Native (Expo)",
-                "JavaScript",
+                "TypeScript",
                 "HTML",
-                "CSS"
+                "CSS",
+                "SQLite"
             ]
         }
     ]
