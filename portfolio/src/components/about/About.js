@@ -114,7 +114,7 @@ function About() {
                         initial="hidden"
                         animate={mainControls}
                         transition={{ duration: 0.5, delay: 0.5 }}>
-                        <h4 className={styles.skillsTitle}>Certifications</h4>
+                        <h4 className={styles.skillsTitle}>Continuous Learning & Professional Development</h4>
                         <Grid
                             alignItems="center"
                             justifyContent="center"
@@ -124,7 +124,7 @@ function About() {
                             {
                                 certificateList.map((certificate, index) => {
                                     return (
-                                        <Grid key={index} xs={12} sm={12} md={6} lg={6} xl={3}>
+                                        <Grid key={index} xs={16} sm={16} md={16} lg={16} xl={4}>
                                             <Certificates props={certificate} />
                                         </Grid>
                                     );
